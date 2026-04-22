@@ -1,0 +1,52 @@
+{
+  "goals": [
+    {
+      "id": "goal_7c5c82e4",
+      "title": "Claude Code \u8bb0\u5fc6\u67b6\u6784\u5206\u6790\u62a5\u544a",
+      "priority": "medium",
+      "context": "",
+      "created_at": "2026-04-14T04:29:57.577993+00:00Z",
+      "status": "active"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_28a3043c",
+      "goal_id": "goal_7c5c82e4",
+      "title": "\u4e0b\u8f7dClaude Code\u6e90\u7801\u5230\u672c\u5730",
+      "priority": "high",
+      "status": "completed",
+      "created_at": "2026-04-14T04:29:59.734847+00:00Z",
+      "notes": "\u4e0b\u8f7d\u5b8c\u6210\uff1aclaude-code-analysis(\u542b512k\u884c\u6e90\u7801) + claude-code-from-source(\u542bbook+prompts) \u4e24\u4e2a\u4ed3\u5e93",
+      "progress": 100,
+      "updated_at": "2026-04-14T04:32:52.432493+00:00Z",
+      "completed_at": "2026-04-14T04:33:46.471437+00:00Z"
+    },
+    {
+      "id": "task_064d29cc",
+      "goal_id": "goal_7c5c82e4",
+      "title": "\u5206\u6790\u8bb0\u5fc6\u6a21\u5757\u6e90\u7801(\u4e09\u5c42\u8bb0\u5fc6+\u6e10\u8fdb\u5f0f\u62ab\u9732+Subagent\u8bb0\u5fc6)",
+      "priority": "high",
+      "status": "in_progress",
+      "created_at": "2026-04-14T04:30:01.909852+00:00Z",
+      "notes": "\u5df2\u8bfb\u53d6\u5168\u90e8\u6838\u5fc3\u6e90\u7801\u6587\u4ef6\uff0c\u6b63\u5728\u751f\u621030\u9875Word\u62a5\u544a",
+      "depends_on": [
+        "\u4e0b\u8f7dClaude Code\u6e90\u7801\u5230\u672c\u5730"
+      ],
+      "updated_at": "2026-04-14T04:33:48.941910+00:00Z",
+      "progress": 50
+    },
+    {
+      "id": "task_11e6c300",
+      "goal_id": "goal_7c5c82e4",
+      "title": "\u751f\u621030\u9875Word\u62a5\u544a(\u6e10\u8fdb\u5f0f\u62ab\u9732+\u5206\u5c42\u8bb0\u5fc6+\u4ee3\u7801\u7ed3\u5408)",
+      "priority": "high",
+      "status": "pending",
+      "created_at": "2026-04-14T04:30:17.282827+00:00Z",
+      "notes": "",
+      "depends_on": [
+        "\u5206\u6790\u8bb0\u5fc6\u6a21\u5757\u6e90\u7801(\u4e09\u5c42\u8bb0\u5fc6+\u6e10\u8fdb\u5f0f\u62ab\u9732+Subagent\u8bb0\u5fc6)"
+      ]
+    }
+  ]
+}

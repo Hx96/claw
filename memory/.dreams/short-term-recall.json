@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-22T00:05:57.840Z",
+  "entries": {
+    "memory:memory/2026-03-25.md:45:109": {
+      "key": "memory:memory/2026-03-25.md:45:109",
+      "path": "memory/2026-03-25.md",
+      "startLine": 45,
+      "endLine": 109,
+      "source": "memory",
+      "snippet": "- 主流工具：Airflow、Dagster、Prefect **报告**： - 完整技术调研报告 - 架构设计分析 - 技术选型建议 **状态**：✅ 已完成，报告已上传云存储 --- ### 4. AI Agent 开发调研 **任务**：调研 AI Agent 开发 **方法**：6 个信息源 - 官方文档、书籍、课程、论文、博客、开源项目 **核心内容**： - 主流框架：LangChain、AutoGen、CrewAI - 核心能力：工具调用、记忆管理、规划推理 - 最佳实践：Prompt Engineering、工具设计 **状态**：✅ 已完成，包含参考资料 --- ### 5. Agent 开发参考资料 **任务**：整理 Agent 开发参考资料 **整理内容**： - 官方文档 - 推荐课程 - 技术博客 - 论文链接 - 开源项目 **状态**：✅ 已整理 --- ### 6. ClawHub 技能排行榜 **任务**：调研搜索、调研、总结类技能 Star 数 **方法**：使用 ClawHub 和 SkillHub **搜索关键词**：search、research、summarize **Top 发现**： - multi-search-engine: 4.020⭐（最高） - baidu-search: 3.988⭐ - research-cog: 3.658⭐ - summarize-pro: 3.658⭐ **状态**：✅ 已完成排序和推荐 --- ### 7. 技能安装测试 **任务**：安装 multi-s",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3.3180246706932564,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-11T05:07:43.509Z",
+      "lastRecalledAt": "2026-04-16T00:13:34.713Z",
+      "queryHashes": [
+        "28e9797b4d84",
+        "6dc959244837",
+        "fa867b2018c7",
+        "02da0bb92b68"
+      ],
+      "recallDays": [
+        "2026-04-11",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "multi-search-engine",
+        "4.020",
+        "baidu-search",
+        "3.988",
+        "research-cog",
+        "3.658",
+        "summarize-pro",
+        "multi-s"
+      ]
+    },
+    "memory:memory/2026-03-25.md:95:161": {
+      "key": "memory:memory/2026-03-25.md:95:161",
+      "path": "memory/2026-03-25.md",
+      "startLine": 95,
+      "endLine": 161,
+      "source": "memory",
+      "snippet": "- summarize-pro: 3.658⭐ **状态**：✅ 已完成排序和推荐 --- ### 7. 技能安装测试 **任务**：安装 multi-search-engine 并测试 **结果**：✅ 安装成功，已测试搜索功能 **测试场景**： - 百度搜索（中文） - Google 搜索（国际） - DuckDuckGo（隐私） - WolframAlpha（知识计算） **状态**：✅ 技能正常工作 --- ### 8. 技术社区养虾调研 **任务**：调研\"技术社区如何养虾\" **发现**：\"养虾\"是真正的虾养殖技术，不是技术社区运营隐喻 **核心要点**： - 水质管理：pH 7.5-8.5，溶解氧 >5 mg/L - 饲料管理：蛋白质 30-35%，每天 3-4 次 - 三段生物絮团模式（2026 热门） **可信度**：⭐⭐⭐⭐⭐（3 个信息源一致） --- ### 9. OpenClaw 默认技能调研 **任务**：调研 OpenClaw 默认安装哪些技能 **发现**： - 官方：53 个技能 - 默认安装：15-17 个 - 核心技能：搜索、浏览器、GitHub、笔记、摘要 **状态**：✅ 已整理清单 --- ### 10. OpenClaw 初始化指南 **任务**：最有用技能 + 快速初始化 **Tier 1 必装技能**（4 个）： - multi-search-engine（4.020⭐） - agent-browser - github - summarize **Tier 2 推荐**（3 个）： -",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4.096666516172512,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-11T05:07:43.509Z",
+      "lastRecalledAt": "2026-04-16T00:13:34.713Z",
+      "queryHashes": [
+        "28e9797b4d84",
+        "6dc959244837",
+        "fa867b2018c7",
+        "24833d785b2d",
+        "02da0bb92b68"
+      ],
+      "recallDays": [
+        "2026-04-11",
+        "2026-04-13",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "summarize-pro",
+        "3.658",
+        "multi-search-engine",
+        "7.5-8.5",
+        "mg/l",
+        "30-35",
+        "3-4",
+        "15-17"
+      ]
+    },
+    "memory:memory/2026-03-25.md:1:59": {
+      "key": "memory:memory/2026-03-25.md:1:59",
+      "path": "memory/2026-03-25.md",
+      "startLine": 1,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "# 2026-03-25 - 工作日志 ## 🕒 时间范围 2026-03-25 07:00 - 16:13 (Asia/Shanghai) --- ## 🎯 主要完成工作 ### 1. 个性化优化 **用户要求**：调研类任务需要 5+ 信息源交叉验证 **实施方案**： - 确立多源交叉验证流程 - 所有信息标注来源和可信度 - 提供完整报告 + 下载链接 **验证状态**：✅ 已在后续任务中严格执行 --- ### 2. 糖酒会调研 **任务**：普通人能不能去糖酒会 **关键发现**： - ✅ 可以免费参观（需预登记） - 时间：每年春秋两届（成都/深圳等城市） - 交流：食品行业经销商 **验证**：2 个信息源（常识 + 官方信息） **可信度**：⭐⭐⭐⭐⭐ --- ### 3. 数据开发 Agent 调研 **任务**：调研数据开发 Agent 建设思路 **方法**：5+ 个信息源交叉验证 - 搜索：百度、Google、GitHub、ArXiv、Medium - 验证：多源对比一致性 **核心发现**： - 2026 年是 Agent 爆发年 - 核心架构：感知 + 推理 + 记忆 + 执行 - 主流工具：Airflow、Dagster、Prefect **报告**： - 完整技术调研报告 - 架构设计分析 - 技术选型建议 **状态**：✅ 已完成，报告已上传云存储 --- ### 4. AI Agent 开发调研 **任务**：调研 AI Agent 开发 **方法**：6 个信息源",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3.295407655694208,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-11T05:07:43.509Z",
+      "lastRecalledAt": "2026-04-16T00:13:34.713Z",
+      "queryHashes": [
+        "28e9797b4d84",
+        "6dc959244837",
+        "fa867b2018c7",
+        "02da0bb92b68"
+      ],
+      "recallDays": [
+        "2026-04-11",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "asia/shanghai",
+        "成都/深圳等城市",
+        "工作",
+        "日志",
+        "时间",
+        "范围",
+        "asia",
+        "shanghai"
+      ]
+    },
+    "memory:memory/2026-03-25.md:145:210": {
+      "key": "memory:memory/2026-03-25.md:145:210",
+      "path": "memory/2026-03-25.md",
+      "startLine": 145,
+      "endLine": 210,
+      "source": "memory",
+      "snippet": "**Tier 1 必装技能**（4 个）： - multi-search-engine（4.020⭐） - agent-browser - github - summarize **Tier 2 推荐**（3 个）： - baidu-search（3.988⭐） - research-cog（3.658⭐） - summarize-pro（3.658⭐） **状态**：✅ 已创建初始化脚本 - 快速初始化：`/tmp/init-openclaw.sh` - 完整初始化：`/tmp/full-init.sh` --- ### 11. 网上搜索验证 - 最有用技能 **任务**：通过网上搜索验证最有用技能 **方法**：爬取 GitHub、知乎、CSDN 等 **验证结果**： - 多篇文章一致推荐前 10 技能 - 交叉验证 5+ 个信息源 - 高度一致的核心技能 **状态**：✅ 已验证，与本地列表一致 --- ### 12. GitHub Star 数调研 **任务**：查看 openclaw/openclaw 仓库 Star 数 **发现**： - ⭐ **335k Stars**（超高人气） - 🍴 65.4k Forks - 👀 1.6k Watchers - 🏷️ MIT License **排名**：GitHub 前 0.1% **状态**：✅ 已获取完整项目信息 --- ### 13. Workspace MD 文件汇报 **任务**：汇报每个 MD 文件内容 **核心文件**： - IDENTITY.md：⚪ 空白（需填写）",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4.080323593160173,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-11T05:07:43.509Z",
+      "lastRecalledAt": "2026-04-16T00:13:34.713Z",
+      "queryHashes": [
+        "28e9797b4d84",
+        "6dc959244837",
+        "fa867b2018c7",
+        "24833d785b2d",
+        "02da0bb92b68"
+      ],
+      "recallDays": [
+        "2026-04-11",
+        "2026-04-13",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "multi-search-engine",
+        "4.020",
+        "agent-browser",
+        "baidu-search",
+        "3.988",
+        "research-cog",
+        "3.658",
+        "summarize-pro"
+      ]
+    },
+    "memory:memory/2026-03-25.md:198:260": {
+      "key": "memory:memory/2026-03-25.md:198:260",
+      "path": "memory/2026-03-25.md",
+      "startLine": 198,
+      "endLine": 260,
+      "source": "memory",
+      "snippet": "- AGENTS.md：✅ 完整（工作区指南） - TOOLS.md：✅ 有内容（工具笔记） - BOOTSTRAP.md：✅ 存在（应该删除） **建议**：填写 IDENTITY.md 和 USER.md --- ### 14. 麦肯锡方法 - 理论调研 **任务**：调研《麦肯锡方法》书籍 **核心内容**： - MECE 原则 - 假设驱动 - 以事实为基础 - 金字塔原理 - 80/20 法则 **状态**：✅ 已整理核心方法论 --- ### 15. 麦肯锡方法 - 实战案例版大纲 **任务**：20 页 PPT 大纲文字稿（IT 案例） **内容**： - 20 页完整大纲 - 6 个 IT 实战案例 - 完整设计规范 - 制作时间估计 **状态**：✅ 已上传云存储 --- ### 16. 麦肯锡方法 - 网上搜索整合 **任务**：网上搜索 + 整合到 PPT 大纲 **搜索结果**： - \"七步成诗\"工作法 - \"8 大核心要点\" - 框架图可视化 **整合方案**： - 补充核心方法论 - 扩展案例库（6 → 12+） - 增强可视化资源 **状态**：✅ 已完成整合 --- ## 🧠 学习要点总结 ### 方法论掌握 1. **MECE 原则**：相互独立、完全穷尽 2. **假设驱动**：先假设后验证 3. **以事实为基础**：数据说话 4. **金字塔原理**：结论先行 5. **80/20 法则**：聚焦关键价值 ### 实战技能提升 1. **多源调研能力**：5+ 信息源交叉验证",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3.284638297127586,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-11T05:07:43.509Z",
+      "lastRecalledAt": "2026-04-16T00:13:34.713Z",
+      "queryHashes": [
+        "28e9797b4d84",
+        "6dc959244837",
+        "fa867b2018c7",
+        "02da0bb92b68"
+      ],
+      "recallDays": [
+        "2026-04-11",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "agents.md",
+        "tools.md",
+        "bootstrap.md",
+        "identity.md",
+        "user.md",
+        "80/20",
+        "完整",
+        "工作"
+      ]
+    },
+    "memory:memory/2026-04-04.md:1:27": {
+      "key": "memory:memory/2026-04-04.md:1:27",
+      "path": "memory/2026-04-04.md",
+      "startLine": 1,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "# 2026-04-04 Memory ## 站会汇报定时任务创建与调试 - 创建每日站会汇报 cron 任务（08:00） - Bug #1：漏传 accountId，导致微信投递失败（Error: weixin: accountId is required） - Bug #2：prompt中memory文件路径格式不对（假设YYYY-MM-DD.md，实际是YYYY-MM-DD-主题.md） - Bug #3：memory/目录03-28~04-03无日志，站会无数据可读 - 修复：prompt改为按日期前缀扫描 + cron执行记录作为补充数据源 - 最终验证：三数据源方案（memory日志 > cron runs > MEMORY.md） ## SOUL.md 更新 新增行为准则：所有配置和操作必须实测验证。不改完就测，测不过就修，修完再测。 ## 记忆体系重建 - 创建 MEMORY.md（长期记忆） - 补全 2026-04-01 ~ 2026-04-03 memory日志（基于cron执行记录） - 站会任务最终版本prompt已验证可用 ## AI热点推送 - Gemma 4发布、Qwen3.6-Plus、Cursor 3 - Claude Code发现23年隐藏Linux漏洞 - Mercur ($10B AI startup) 确认数据泄露",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 5.495510902192118,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-11T05:07:43.509Z",
+      "lastRecalledAt": "2026-04-22T00:05:57.840Z",
+      "queryHashes": [
+        "28e9797b4d84",
+        "fa867b2018c7",
+        "29a7498d21ed",
+        "02da0bb92b68",
+        "7c6ab4d72b68",
+        "792c73f8f403"
+      ],
+      "recallDays": [
+        "2026-04-11",
+        "2026-04-16",
+        "2026-04-17",
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "假设yyyy-mm-dd.md",
+        "实际是yyyy-mm-dd-主题.md",
+        "memory/目录03-28",
+        "04-03无日志",
+        "memory.md",
+        "soul.md",
+        "qwen3.6-plus",
+        "汇报"
+      ]
+    },
+    "memory:memory/2026-04-02.md:1:24": {
+      "key": "memory:memory/2026-04-02.md:1:24",
+      "path": "memory/2026-04-02.md",
+      "startLine": 1,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "# 2026-04-02 Memory ## OpenClaw每日安全检查 发现28个漏洞（严重10、高危8、中等6）： - @hono/node-server 授权绕过（严重） - fast-xml-parser XML实体注入（严重） - path-to-regexp ReDoS（严重） - handlebars JavaScript注入（严重） - OpenClaw版本落后：2026.3.11 → 2026.4.1可用 ## AI Builders 每日简报 - Claude Code重写渲染器（虚拟视口、鼠标支持） - Vercel注册增长52% MoM - Amjad Masad：前所未有财富创造时代 - Zara Zhang：用OpenClaw替代待办列表 - Linear Agent可直接读代码回答问题 - Mistral VoxTTS语音技术（Latent Space播客） ## 每日AI热点推送 正常运行。",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.4739203257571574,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-13T00:19:20.535Z",
+      "lastRecalledAt": "2026-04-16T00:04:08.881Z",
+      "queryHashes": [
+        "24833d785b2d",
+        "cfecc44d7566",
+        "29a7498d21ed"
+      ],
+      "recallDays": [
+        "2026-04-13",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "hono/node-server",
+        "fast-xml-parser",
+        "path-to-regexp",
+        "2026.3.11",
+        "2026.4.1可用",
+        "openclaw",
+        "每日",
+        "安全"
+      ]
+    },
+    "memory:memory/2026-04-13.md:1:21": {
+      "key": "memory:memory/2026-04-13.md:1:21",
+      "path": "memory/2026-04-13.md",
+      "startLine": 1,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "# 2026-04-13 Daily Log ## 07:43 AI Builders 每日简报投递问题排查 - 用户反馈今早07:30的AI Builders简报没收到 - 排查cron jobs.json：执行状态ok，deliveryStatus=delivered，耗时91.5s - 发现投递队列有历史失败记录（04-09），原因是lightclawbot WS断连 - 当前投递配置已修复为openclaw-weixin，但微信端可能消息被折叠 - **手动补发**：通过message工具直接推送完整简报到微信 - 简报内容亮点：Steipete harness插件化+Strict模式、Thariq Claude Code接TurboTax、Garry Tan架构哲学、Aaron Levie token需求预测 ## 07:55 抓取Builder记忆相关推文详情 - 用户要求抓取简报中记忆相关推文的完整内容 - 使用x-tweet-fetcher技能抓取3条推文： - Garry Tan: \"Memory is markdown. Skills are markdown. Brain is a git repo.\" (1.3K likes) - Aditya Agarwal: Claude Code三层记忆架构 (171 likes) - Garry Tan: \"Thin harness, fat skills\" (88 likes) - 通过message工具推送详情到微信 ## 决策 - 确认每日写memory日志的习惯，从今天开始执行",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.7664324026347775,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-13T00:19:32.798Z",
+      "lastRecalledAt": "2026-04-16T00:04:08.881Z",
+      "queryHashes": [
+        "cfecc44d7566",
+        "29a7498d21ed"
+      ],
+      "recallDays": [
+        "2026-04-13",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "jobs.json",
+        "耗时91.5s",
+        "04-09",
+        "当前投递配置已修复为openclaw-weixin",
+        "使用x-tweet-fetcher技能抓取3条推文",
+        "1.3k",
+        "log",
+        "builders"
+      ]
+    },
+    "memory:memory/2026-03-26.md:1:52": {
+      "key": "memory:memory/2026-03-26.md:1:52",
+      "path": "memory/2026-03-26.md",
+      "startLine": 1,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "# 2026-03-26 Memory ## OpenClaw Security Check Cron Job Created daily security check job for OpenClaw: **Job Details:** - Name: openclaw-daily-security-check - Schedule: Every day at 8:00 AM (Cron: 0 8 * * *) - Session: Isolated - Channel: openclaw-weixin - Status: Enabled - Next Run: 2026-03-27 08:00:00 **Check Script Location:** `/root/.openclaw/workspace/scripts/openclaw-security-check.sh` **What it does:** 1. Checks OpenClaw version 2. Scans for package vulnerabilities (npm audit) 3. Checks system security updates 4. Attempts auto-fix for vulnerabilities 5. Updates OpenClaw to latest version 6. Checks configuration file security 7. Generates report with logs **Log Files:** - Main l",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-16T23:35:39.758Z",
+      "lastRecalledAt": "2026-04-16T23:35:39.758Z",
+      "queryHashes": [
+        "7c6ab4d72b68"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "openclaw-daily-security-check",
+        "openclaw-weixin",
+        "auto-fix",
+        "openclaw",
+        "security",
+        "check",
+        "cron",
+        "job"
+      ]
+    },
+    "memory:memory/2026-03-29.md:1:4": {
+      "key": "memory:memory/2026-03-29.md:1:4",
+      "path": "memory/2026-03-29.md",
+      "startLine": 1,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "# 2026-03-29 Memory 无记录。",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-22T00:05:57.840Z",
+      "lastRecalledAt": "2026-04-22T00:05:57.840Z",
+      "queryHashes": [
+        "792c73f8f403"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "记录"
+      ]
+    },
+    "memory:memory/2026-03-30.md:1:4": {
+      "key": "memory:memory/2026-03-30.md:1:4",
+      "path": "memory/2026-03-30.md",
+      "startLine": 1,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "# 2026-03-30 Memory 无记录。",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-22T00:05:57.840Z",
+      "lastRecalledAt": "2026-04-22T00:05:57.840Z",
+      "queryHashes": [
+        "792c73f8f403"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "记录"
+      ]
+    },
+    "memory:memory/2026-03-31.md:1:4": {
+      "key": "memory:memory/2026-03-31.md:1:4",
+      "path": "memory/2026-03-31.md",
+      "startLine": 1,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "# 2026-03-31 Memory 无记录。",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-22T00:05:57.840Z",
+      "lastRecalledAt": "2026-04-22T00:05:57.840Z",
+      "queryHashes": [
+        "792c73f8f403"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "记录"
+      ]
+    },
+    "memory:memory/2026-03-28.md:1:4": {
+      "key": "memory:memory/2026-03-28.md:1:4",
+      "path": "memory/2026-03-28.md",
+      "startLine": 1,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "# 2026-03-28 Memory 无记录。可能是非活跃日或对话内容未保存。",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-22T00:05:57.840Z",
+      "lastRecalledAt": "2026-04-22T00:05:57.840Z",
+      "queryHashes": [
+        "792c73f8f403"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "记录",
+        "可能",
+        "是非",
+        "活跃",
+        "对话",
+        "内容",
+        "保存"
+      ]
+    },
+    "memory:memory/2026-04-17.md:1:37": {
+      "key": "memory:memory/2026-04-17.md:1:37",
+      "path": "memory/2026-04-17.md",
+      "startLine": 1,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "# 2026-04-17 Memory ## 磁盘清理（完成） 从84%降至53%，释放约6G空间： | 清理项 | 释放空间 | |--------|---------| | pnpm store prune | ~1.8G（54237文件，1162包） | | npm cache clean --force | ~373M | | apt clean + autoremove | ~344M | | journal日志（vacuum 3天） | ~86M | | /tmp 旧文件 | ~116M | **无法清理的项目：** - snap chromium（1.6G）+ snap依赖（~3.3G）= snap remove被挂住，疑似权限问题 - memory-tencentdb插件（768M）= 已配置启用，不能删 - playwright chromium（622M）= openclaw browser依赖，不能删 - puppeteer（581M）= 可能其他技能依赖 - huggingface cache（605M）= 模型缓存，清理后需重新下载 ## AI简报重新生成 用户07:35要求重新生成AI简报，手动触发了两个cron任务： - 每日AI热点推送（c8e77053） - AI Builders 每日简报（bfaef19e-a325） 均成功入队执行。 ## 用户提问：解放战争时期货币政策 整理了1937-1949年国民政府货币崩溃数据： - 法币发行量从36亿膨胀到399万亿（11万倍） - 金圆券5个月膨胀17386倍 - 上海物价指数涨",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-22T00:05:57.840Z",
+      "lastRecalledAt": "2026-04-22T00:05:57.840Z",
+      "queryHashes": [
+        "792c73f8f403"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "1.8g",
+        "1.6g",
+        "3.3g",
+        "memory-tencentdb插件",
+        "bfaef19e-a325",
+        "整理了1937-1949年国民政府货币崩溃数据",
+        "磁盘",
+        "清理"
+      ]
+    }
+  }
+}

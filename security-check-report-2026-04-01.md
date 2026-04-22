@@ -1,0 +1,126 @@
+# OpenClaw Daily Security Check Report
+**Date:** 2026-04-01 14:30 UTC / 2026-04-01 22:30 Asia/Shanghai
+**Status:** COMPLETED
+
+## Executive Summary
+- **Critical Issues:** 5 code safety violations in plugins
+- **Moderate Vulnerabilities:** 15 npm vulnerabilities across extensions
+- **Warnings:** 6 security configuration issues
+- **Info:** 1 attack surface summary
+- **Action Taken:** File permissions fixed, vulnerabilities identified
+
+## Critical Findings
+
+### Code Safety Violations (5 Critical)
+Multiple plugins contain dangerous code patterns requiring review:
+
+1. **adp-openclaw plugin:**
+   - Environment variable harvesting with network send (3 instances)
+   - Shell command execution (child_process)
+
+2. **openclaw-plugin-yuanbao plugin:**
+   - Shell command execution (child_process)
+
+3. **openclaw-qqbot plugin:**
+   - Environment variable harvesting with network send (3 instances)
+   - Shell command execution (7 instances)
+
+4. **openclaw-weixin plugin:**
+   - Environment variable harvesting with network send (1 instance)
+
+5. **wecom plugin:**
+   - Shell command execution (1 instance)
+   - Environment variable harvesting with network send (2 instances)
+
+**Recommendation:** Review plugin source code before use. Remove untrusted plugins from OpenClaw extensions directory.
+
+## NPM Vulnerabilities (15 Total)
+
+### Critical (2)
+1. **fast-xml-parser** (wecom extension): Entity encoding bypass via regex injection, entity expansion DoS, stack overflow
+2. **form-data** (openclaw-plugin-yuanbao): Unsafe random boundary generation
+
+### High (8)
+1. **@hono/node-server** (multiple extensions): Authorization bypass via encoded slashes
+2. **hono** (openclaw-qqbot): Multiple XSS and security issues
+3. **tar** (openclaw-qqbot): File creation/overwrite via hardlink path traversal
+4. **path-to-regexp** (multiple): Denial of Service via regex patterns
+5. **picomatch** (multiple): Method injection in POSIX character classes, ReDoS
+6. **moltbot** (openclaw-qqbot): Missing auth in browser relay websocket
+7. **handlebars** (openclaw-plugin-yuanbao): JavaScript injection via AST type confusion
+8. **fast-xml-parser** (adp-openclaw): Entity encoding bypass and DoS
+
+### Moderate (5)
+1. **brace-expansion** (multiple): Zero-step sequence causes memory exhaustion
+2. **ajv** (openclaw-plugin-yuanbao): ReDoS with $data option
+3. **qs** (openclaw-plugin-yuanbao): Array limit bypass causing DoS
+4. **tough-cookie** (openclaw-plugin-yuanbao): Prototype pollution
+5. **picomatch** (openclaw-weixin): Method injection and ReDoS
+
+## Configuration Warnings (6)
+
+### 1. Missing Trusted Proxies
+- **Issue:** Gateway configured for loopback only but no trusted proxies set
+- **Risk:** Reverse proxy spoofing possible
+- **Fix:** Set `gateway.trustedProxies` or keep Control UI local-only
+
+### 2. Extensions Without Allowlist
+- **Issue:** 7 extensions exist but `plugins.allow` not set
+- **Risk:** Any discovered plugin may load automatically
+- **Fix:** Set explicit allowlist of trusted plugin IDs
+
+### 3. Permissive Tool Policy
+- **Issue:** Extension tools reachable under permissive policy
+- **Risk:** Plugin tools accessible with untrusted input
+- **Fix:** Use restrictive profiles (`minimal`/`coding`) or explicit tool allowlists
+
+### 4. Unpinned NPM Specifications
+- **Issue:** 6 plugins installed with unpinned versions
+- **Risk:** Supply chain vulnerability from unexpected updates
+- **Fix:** Pin to exact versions (e.g., `@scope/pkg@1.2.3`)
+
+### 5. Missing Integrity Metadata
+- **Issue:** `lightclawbot` plugin missing integrity hash
+- **Risk:** Tampering detection limited
+- **Fix:** Reinstall to refresh integrity metadata
+
+### 6. Suspicious Code Patterns
+- **Issue:** `lightclawbot` has 2 potential data exfiltration patterns
+- **Risk:** File read + network send combinations
+- **Fix:** Review flagged code for safety
+
+## File Permissions (Fixed)
+- ✅ Applied secure permissions (600/700) to session files
+- ✅ Fixed 6 session files with incorrect permissions
+- ✅ All core directories already had correct permissions
+
+## Recommended Actions
+
+### Immediate (Critical)
+1. **Review plugin source code** for dangerous patterns
+2. **Remove untrusted plugins** or assess risk vs. benefit
+3. **Update vulnerable dependencies** where possible
+4. **Configure plugins.allow** whitelist
+
+### High Priority
+1. **Fix Hono framework vulnerabilities** (affects multiple extensions)
+2. **Address fast-xml-parser critical vulnerabilities**
+3. **Update path-to-regexp and picomatch packages**
+
+### Medium Priority
+1. **Pin all npm dependencies** to exact versions
+2. **Set up trusted proxies** if using reverse proxy
+3. **Review lightclawbot exfiltration patterns**
+
+### Low Priority
+1. **Install missing integrity metadata**
+2. **Evaluate plugin tool policies**
+
+## Next Steps
+- Schedule dependency updates during maintenance window
+- Implement plugin allowlist configuration
+- Consider security scanning for CI/CD pipeline
+- Monitor for new security advisories
+
+---
+**Automated Report Generated by OpenClaw Security Check**

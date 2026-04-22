@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "skills": {
+    "self-improving-agent": {
+      "name": "self-improving-agent",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=self-improving-agent",
+      "source": "skillhub",
+      "version": "1.0.11"
+    },
+    "Summarize": {
+      "name": "Summarize",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=Summarize",
+      "source": "skillhub",
+      "version": ""
+    },
+    "multi-search-engine": {
+      "name": "Multi Search Engine",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=multi-search-engine",
+      "source": "skillhub",
+      "version": "2.0.1"
+    },
+    "code-research-crafter": {
+      "name": "Code Research Crafter",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=code-research-crafter",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "news-scout": {
+      "name": "news-scout 热点新闻聚合简报",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=news-scout",
+      "source": "skillhub",
+      "version": "1.1.0"
+    }
+  }
+}

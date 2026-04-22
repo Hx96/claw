@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "skills": {
+    "openclaw-tavily-search": {
+      "version": "0.1.0",
+      "installedAt": 1774109334571
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1774109335951
+    },
+    "agent-browser": {
+      "version": "0.2.0",
+      "installedAt": 1774109337362
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1774109338802
+    },
+    "obsidian": {
+      "version": "1.0.0",
+      "installedAt": 1774109340566
+    },
+    "weather": {
+      "version": "1.0.0",
+      "installedAt": 1774109342048
+    },
+    "tencentcloud-lighthouse-skill": {
+      "version": "1.0.0",
+      "installedAt": 1774109344093
+    },
+    "tencent-docs": {
+      "version": "1.0.18",
+      "installedAt": 1774109347404
+    },
+    "tencent-cos-skill": {
+      "version": "1.0.6",
+      "installedAt": 1774109349848
+    },
+    "self-improving-agent": {
+      "version": "1.0.11",
+      "installedAt": 1774309919991
+    },
+    "Summarize": {
+      "version": "",
+      "installedAt": 1774309956784
+    },
+    "download-tools": {
+      "version": "1.0.0",
+      "installedAt": 1774361461758
+    },
+    "yt-downloader": {
+      "version": "1.0.1",
+      "installedAt": 1774362001685
+    },
+    "youtube-transcript-generator": {
+      "version": "1.0.0",
+      "installedAt": 1774362661479
+    },
+    "faster-whisper-transcribe": {
+      "version": "1.0.0",
+      "installedAt": 1774362780827
+    },
+    "multi-search-engine": {
+      "version": "2.0.1",
+      "installedAt": 1774399205998
+    },
+    "ai-news-collectors": {
+      "version": "1.0.0",
+      "installedAt": 1774827126697
+    },
+    "code-research-crafter": {
+      "version": "1.0.0",
+      "installedAt": 1774830279551
+    },
+    "free-google-search-with-browser": {
+      "version": "0.0.1",
+      "installedAt": 1774911361718
+    },
+    "browser-use": {
+      "version": "2.0.0",
+      "installedAt": 1774915812415
+    },
+    "news-scout": {
+      "version": "1.1.0",
+      "installedAt": 1775087836944
+    },
+    "web-tools-guide": {
+      "version": "1.0.2",
+      "installedAt": 1776297476836
+    },
+    "x-tweet-fetcher": {
+      "version": "0.1.0",
+      "installedAt": 1775989186713
+    },
+    "mission-control": {
+      "version": "2.3.1",
+      "installedAt": 1776135472398
+    },
+    "proactive-tasks": {
+      "version": "1.2.3",
+      "installedAt": 1776135477003
+    },
+    "compound-eng-file-todos": {
+      "version": "2.55.1",
+      "installedAt": 1776135482899
+    }
+  }
+}

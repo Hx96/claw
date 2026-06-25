@@ -1,14 +1,30 @@
 # Personal Fit Daily Log
 
-## 2026-06-25
+## 2026-06-26
 
-- Weight: 87.4kg
+- Weight: 87.5kg
 - Meals:
 - Workout:
 - Sleep:
 - Body signals:
-- Notes:
+- Notes: Early weigh-in logged. Compared with 2026-06-25, weight is +0.1kg.
 - Assistant assessment:
+
+## 2026-06-25
+
+- Weight: 87.4kg
+- Meals:
+  - 早餐：油条、鸡蛋、美式
+  - 午餐：波奇饭
+  - 零食：饼干约100g
+  - 下午：生榨椰汁300ml、水果拼盘200g
+  - 晚餐：鸡腿×2，煎饺×1
+  - 夜宵/加餐：西瓜约1kg，蒙都牛肉干50g，伊利奶皮子酸奶×1
+- Workout: 无训练
+- Sleep:
+- Body signals:
+- Notes: 今天早餐和午餐总体可控，但饼干+椰汁+水果拼盘把热量抬高了；夜宵再加高糖水果和酸奶后，全天超标风险明显上升
+- Assistant assessment: 蛋白质估计约95-130g；总热量约2200-2850kcal，已明显高于1700-1900kcal目标区间。主要问题是饼干、甜饮、夜宵水果和酸奶把热量预算打穿
 
 ## 2026-06-24
 

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-22T00:05:57.840Z",
+  "updatedAt": "2026-06-24T00:06:28.000Z",
   "entries": {
     "memory:memory/2026-03-25.md:45:109": {
       "key": "memory:memory/2026-03-25.md:45:109",
@@ -116,24 +116,29 @@
       "endLine": 210,
       "source": "memory",
       "snippet": "**Tier 1 必装技能**（4 个）： - multi-search-engine（4.020⭐） - agent-browser - github - summarize **Tier 2 推荐**（3 个）： - baidu-search（3.988⭐） - research-cog（3.658⭐） - summarize-pro（3.658⭐） **状态**：✅ 已创建初始化脚本 - 快速初始化：`/tmp/init-openclaw.sh` - 完整初始化：`/tmp/full-init.sh` --- ### 11. 网上搜索验证 - 最有用技能 **任务**：通过网上搜索验证最有用技能 **方法**：爬取 GitHub、知乎、CSDN 等 **验证结果**： - 多篇文章一致推荐前 10 技能 - 交叉验证 5+ 个信息源 - 高度一致的核心技能 **状态**：✅ 已验证，与本地列表一致 --- ### 12. GitHub Star 数调研 **任务**：查看 openclaw/openclaw 仓库 Star 数 **发现**： - ⭐ **335k Stars**（超高人气） - 🍴 65.4k Forks - 👀 1.6k Watchers - 🏷️ MIT License **排名**：GitHub 前 0.1% **状态**：✅ 已获取完整项目信息 --- ### 13. Workspace MD 文件汇报 **任务**：汇报每个 MD 文件内容 **核心文件**： - IDENTITY.md：⚪ 空白（需填写）",
-      "recallCount": 5,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.080323593160173,
+      "totalScore": 7.080323593160173,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-11T05:07:43.509Z",
-      "lastRecalledAt": "2026-04-16T00:13:34.713Z",
+      "lastRecalledAt": "2026-06-02T14:50:31.175Z",
       "queryHashes": [
         "28e9797b4d84",
         "6dc959244837",
         "fa867b2018c7",
         "24833d785b2d",
-        "02da0bb92b68"
+        "02da0bb92b68",
+        "26f64e1d3b37",
+        "098722c77409",
+        "78122c876d07"
       ],
       "recallDays": [
         "2026-04-11",
         "2026-04-13",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-27",
+        "2026-06-02"
       ],
       "conceptTags": [
         "multi-search-engine",
@@ -188,26 +193,32 @@
       "endLine": 27,
       "source": "memory",
       "snippet": "# 2026-04-04 Memory ## 站会汇报定时任务创建与调试 - 创建每日站会汇报 cron 任务（08:00） - Bug #1：漏传 accountId，导致微信投递失败（Error: weixin: accountId is required） - Bug #2：prompt中memory文件路径格式不对（假设YYYY-MM-DD.md，实际是YYYY-MM-DD-主题.md） - Bug #3：memory/目录03-28~04-03无日志，站会无数据可读 - 修复：prompt改为按日期前缀扫描 + cron执行记录作为补充数据源 - 最终验证：三数据源方案（memory日志 > cron runs > MEMORY.md） ## SOUL.md 更新 新增行为准则：所有配置和操作必须实测验证。不改完就测，测不过就修，修完再测。 ## 记忆体系重建 - 创建 MEMORY.md（长期记忆） - 补全 2026-04-01 ~ 2026-04-03 memory日志（基于cron执行记录） - 站会任务最终版本prompt已验证可用 ## AI热点推送 - Gemma 4发布、Qwen3.6-Plus、Cursor 3 - Claude Code发现23年隐藏Linux漏洞 - Mercur ($10B AI startup) 确认数据泄露",
-      "recallCount": 6,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.495510902192118,
+      "totalScore": 8.495510902192118,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-11T05:07:43.509Z",
-      "lastRecalledAt": "2026-04-22T00:05:57.840Z",
+      "lastRecalledAt": "2026-05-30T23:21:24.730Z",
       "queryHashes": [
         "28e9797b4d84",
         "fa867b2018c7",
         "29a7498d21ed",
         "02da0bb92b68",
         "7c6ab4d72b68",
-        "792c73f8f403"
+        "792c73f8f403",
+        "94c120f64eeb",
+        "429085a3b5a4",
+        "68040f2e9c82"
       ],
       "recallDays": [
         "2026-04-11",
         "2026-04-16",
         "2026-04-17",
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-28",
+        "2026-04-29",
+        "2026-05-31"
       ],
       "conceptTags": [
         "假设yyyy-mm-dd.md",
@@ -227,21 +238,23 @@
       "endLine": 24,
       "source": "memory",
       "snippet": "# 2026-04-02 Memory ## OpenClaw每日安全检查 发现28个漏洞（严重10、高危8、中等6）： - @hono/node-server 授权绕过（严重） - fast-xml-parser XML实体注入（严重） - path-to-regexp ReDoS（严重） - handlebars JavaScript注入（严重） - OpenClaw版本落后：2026.3.11 → 2026.4.1可用 ## AI Builders 每日简报 - Claude Code重写渲染器（虚拟视口、鼠标支持） - Vercel注册增长52% MoM - Amjad Masad：前所未有财富创造时代 - Zara Zhang：用OpenClaw替代待办列表 - Linear Agent可直接读代码回答问题 - Mistral VoxTTS语音技术（Latent Space播客） ## 每日AI热点推送 正常运行。",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.4739203257571574,
+      "totalScore": 3.4739203257571574,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-13T00:19:20.535Z",
-      "lastRecalledAt": "2026-04-16T00:04:08.881Z",
+      "lastRecalledAt": "2026-04-28T00:23:26.506Z",
       "queryHashes": [
         "24833d785b2d",
         "cfecc44d7566",
-        "29a7498d21ed"
+        "29a7498d21ed",
+        "94c120f64eeb"
       ],
       "recallDays": [
         "2026-04-13",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-28"
       ],
       "conceptTags": [
         "hono/node-server",
@@ -261,20 +274,27 @@
       "endLine": 21,
       "source": "memory",
       "snippet": "# 2026-04-13 Daily Log ## 07:43 AI Builders 每日简报投递问题排查 - 用户反馈今早07:30的AI Builders简报没收到 - 排查cron jobs.json：执行状态ok，deliveryStatus=delivered，耗时91.5s - 发现投递队列有历史失败记录（04-09），原因是lightclawbot WS断连 - 当前投递配置已修复为openclaw-weixin，但微信端可能消息被折叠 - **手动补发**：通过message工具直接推送完整简报到微信 - 简报内容亮点：Steipete harness插件化+Strict模式、Thariq Claude Code接TurboTax、Garry Tan架构哲学、Aaron Levie token需求预测 ## 07:55 抓取Builder记忆相关推文详情 - 用户要求抓取简报中记忆相关推文的完整内容 - 使用x-tweet-fetcher技能抓取3条推文： - Garry Tan: \"Memory is markdown. Skills are markdown. Brain is a git repo.\" (1.3K likes) - Aditya Agarwal: Claude Code三层记忆架构 (171 likes) - Garry Tan: \"Thin harness, fat skills\" (88 likes) - 通过message工具推送详情到微信 ## 决策 - 确认每日写memory日志的习惯，从今天开始执行",
-      "recallCount": 2,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.7664324026347775,
+      "totalScore": 5.766432402634777,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-13T00:19:32.798Z",
-      "lastRecalledAt": "2026-04-16T00:04:08.881Z",
+      "lastRecalledAt": "2026-06-23T23:42:42.094Z",
       "queryHashes": [
         "cfecc44d7566",
-        "29a7498d21ed"
+        "29a7498d21ed",
+        "94c120f64eeb",
+        "3f5e9bbbd7e2",
+        "57501403ad71",
+        "0818465a7f6f"
       ],
       "recallDays": [
         "2026-04-13",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-28",
+        "2026-06-11",
+        "2026-06-24"
       ],
       "conceptTags": [
         "jobs.json",
@@ -294,18 +314,24 @@
       "endLine": 52,
       "source": "memory",
       "snippet": "# 2026-03-26 Memory ## OpenClaw Security Check Cron Job Created daily security check job for OpenClaw: **Job Details:** - Name: openclaw-daily-security-check - Schedule: Every day at 8:00 AM (Cron: 0 8 * * *) - Session: Isolated - Channel: openclaw-weixin - Status: Enabled - Next Run: 2026-03-27 08:00:00 **Check Script Location:** `/root/.openclaw/workspace/scripts/openclaw-security-check.sh` **What it does:** 1. Checks OpenClaw version 2. Scans for package vulnerabilities (npm audit) 3. Checks system security updates 4. Attempts auto-fix for vulnerabilities 5. Updates OpenClaw to latest version 6. Checks configuration file security 7. Generates report with logs **Log Files:** - Main l",
-      "recallCount": 1,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-16T23:35:39.758Z",
-      "lastRecalledAt": "2026-04-16T23:35:39.758Z",
+      "lastRecalledAt": "2026-06-23T23:42:37.593Z",
       "queryHashes": [
-        "7c6ab4d72b68"
+        "7c6ab4d72b68",
+        "26f64e1d3b37",
+        "079051661cab",
+        "57501403ad71"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-27",
+        "2026-06-08",
+        "2026-06-24"
       ],
       "conceptTags": [
         "openclaw-daily-security-check",
@@ -325,18 +351,20 @@
       "endLine": 4,
       "source": "memory",
       "snippet": "# 2026-03-29 Memory 无记录。",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-22T00:05:57.840Z",
-      "lastRecalledAt": "2026-04-22T00:05:57.840Z",
+      "lastRecalledAt": "2026-04-29T00:03:57.731Z",
       "queryHashes": [
-        "792c73f8f403"
+        "792c73f8f403",
+        "429085a3b5a4"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-29"
       ],
       "conceptTags": [
         "记录"
@@ -349,18 +377,20 @@
       "endLine": 4,
       "source": "memory",
       "snippet": "# 2026-03-30 Memory 无记录。",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-22T00:05:57.840Z",
-      "lastRecalledAt": "2026-04-22T00:05:57.840Z",
+      "lastRecalledAt": "2026-04-29T00:03:57.731Z",
       "queryHashes": [
-        "792c73f8f403"
+        "792c73f8f403",
+        "429085a3b5a4"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-29"
       ],
       "conceptTags": [
         "记录"
@@ -373,18 +403,20 @@
       "endLine": 4,
       "source": "memory",
       "snippet": "# 2026-03-31 Memory 无记录。",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-22T00:05:57.840Z",
-      "lastRecalledAt": "2026-04-22T00:05:57.840Z",
+      "lastRecalledAt": "2026-04-29T00:03:57.731Z",
       "queryHashes": [
-        "792c73f8f403"
+        "792c73f8f403",
+        "429085a3b5a4"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-29"
       ],
       "conceptTags": [
         "记录"
@@ -397,18 +429,20 @@
       "endLine": 4,
       "source": "memory",
       "snippet": "# 2026-03-28 Memory 无记录。可能是非活跃日或对话内容未保存。",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-22T00:05:57.840Z",
-      "lastRecalledAt": "2026-04-22T00:05:57.840Z",
+      "lastRecalledAt": "2026-04-29T00:03:57.731Z",
       "queryHashes": [
-        "792c73f8f403"
+        "792c73f8f403",
+        "429085a3b5a4"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-29"
       ],
       "conceptTags": [
         "记录",
@@ -427,18 +461,20 @@
       "endLine": 37,
       "source": "memory",
       "snippet": "# 2026-04-17 Memory ## 磁盘清理（完成） 从84%降至53%，释放约6G空间： | 清理项 | 释放空间 | |--------|---------| | pnpm store prune | ~1.8G（54237文件，1162包） | | npm cache clean --force | ~373M | | apt clean + autoremove | ~344M | | journal日志（vacuum 3天） | ~86M | | /tmp 旧文件 | ~116M | **无法清理的项目：** - snap chromium（1.6G）+ snap依赖（~3.3G）= snap remove被挂住，疑似权限问题 - memory-tencentdb插件（768M）= 已配置启用，不能删 - playwright chromium（622M）= openclaw browser依赖，不能删 - puppeteer（581M）= 可能其他技能依赖 - huggingface cache（605M）= 模型缓存，清理后需重新下载 ## AI简报重新生成 用户07:35要求重新生成AI简报，手动触发了两个cron任务： - 每日AI热点推送（c8e77053） - AI Builders 每日简报（bfaef19e-a325） 均成功入队执行。 ## 用户提问：解放战争时期货币政策 整理了1937-1949年国民政府货币崩溃数据： - 法币发行量从36亿膨胀到399万亿（11万倍） - 金圆券5个月膨胀17386倍 - 上海物价指数涨",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-22T00:05:57.840Z",
-      "lastRecalledAt": "2026-04-22T00:05:57.840Z",
+      "lastRecalledAt": "2026-06-08T00:25:14.688Z",
       "queryHashes": [
-        "792c73f8f403"
+        "792c73f8f403",
+        "d572fc011f66"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-06-08"
       ],
       "conceptTags": [
         "1.8g",
@@ -449,6 +485,228 @@
         "整理了1937-1949年国民政府货币崩溃数据",
         "磁盘",
         "清理"
+      ]
+    },
+    "memory:memory/2026-04-12.md:1:4": {
+      "key": "memory:memory/2026-04-12.md:1:4",
+      "path": "memory/2026-04-12.md",
+      "startLine": 1,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "# 2026-04-12 Memory 无记录。cron任务应正常运行。",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-29T00:03:57.731Z",
+      "lastRecalledAt": "2026-04-29T00:03:57.731Z",
+      "queryHashes": [
+        "429085a3b5a4"
+      ],
+      "recallDays": [
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "记录",
+        "cron",
+        "任务",
+        "正常",
+        "运行"
+      ]
+    },
+    "memory:memory/2026-05-12.md:1:12": {
+      "key": "memory:memory/2026-05-12.md:1:12",
+      "path": "memory/2026-05-12.md",
+      "startLine": 1,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "# 2026-05-12 日志 ## ljg-skills 技能地图分析 - 分析了 GitHub 仓库 lijigang/ljg-skills 的全部 20 个 skill - 逐个获取 SKILL.md 内容，提取名称、版本、功能描述、触发词 - 生成分类可视化 HTML（5大类20个skill卡片）+ PNG 截图发送微信 - 分类：认知原子(7) / 输出铸造(2) / 复合工作流(4) / 深度分析(5) / 系统运维(2) - 改造优先级评估：高(rank/paper/think/card)、中(writes/learn/qa/read/present)、低(travel/push/skill-map) - 关键特征：全部 org-mode 输出，大部分 prompt 驱动，card/present 依赖 playwright 截图 - 文件位置：/root/outputs/2026-05-12/final/ljg-skills-map.html",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T23:52:35.651Z",
+      "lastRecalledAt": "2026-06-24T00:06:25.184Z",
+      "queryHashes": [
+        "25588d6630af",
+        "930d978de32c",
+        "78122c876d07",
+        "b466c76a2546"
+      ],
+      "recallDays": [
+        "2026-05-27",
+        "2026-06-02",
+        "2026-06-24"
+      ],
+      "conceptTags": [
+        "ljg-skills",
+        "lijigang/ljg-skills",
+        "skill.md",
+        "rank/paper/think/card",
+        "writes/learn/qa/read/present",
+        "travel/push/skill-map",
+        "org-mode",
+        "card/present"
+      ]
+    },
+    "memory:memory/2026-04-22.md:1:14": {
+      "key": "memory:memory/2026-04-22.md:1:14",
+      "path": "memory/2026-04-22.md",
+      "startLine": 1,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "# 2026-04-22 Memory ## 日志补全 + MEMORY.md更新 - 补全04-12~04-21的空白memory日志（基于cron run时间戳和git commit记录） - 更新MEMORY.md： - OpenClaw版本更新到v2026.4.12 - 新增opencli搜索能力记录 - 补全04-13/04-17/04-18事件时间线 - 新增经验：cron run日志覆盖写入、memory当天写不拖延 - 更新定时任务清单格式（精确cron表达式） - 补充已安装技能列表（x-tweet-fetcher、opencli） - 待办：在HEARTBEAT中增加memory日志检查机制",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-08T00:25:14.688Z",
+      "lastRecalledAt": "2026-06-08T00:25:14.688Z",
+      "queryHashes": [
+        "d572fc011f66"
+      ],
+      "recallDays": [
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "memory.md更新",
+        "补全04-12",
+        "04-21的空白memory日志",
+        "更新memory.md",
+        "openclaw版本更新到v2026.4.12",
+        "补全04-13/04-17/04-18事件时间线",
+        "x-tweet-fetcher",
+        "日志"
+      ]
+    },
+    "memory:memory/2026-06-24.md:1:6": {
+      "key": "memory:memory/2026-06-24.md:1:6",
+      "path": "memory/2026-06-24.md",
+      "startLine": 1,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "## 06:38 饮食记录 - 昨晚加餐：冰淇淋 + 鸡肉200g - 体重：87.7kg",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-23T23:41:50.107Z",
+      "lastRecalledAt": "2026-06-24T00:06:28.000Z",
+      "queryHashes": [
+        "9b65675b5a86",
+        "57501403ad71",
+        "b466c76a2546",
+        "e3b7cc3acc61"
+      ],
+      "recallDays": [
+        "2026-06-24"
+      ],
+      "conceptTags": [
+        "87.7kg",
+        "饮食",
+        "记录",
+        "昨晚",
+        "加餐",
+        "冰淇淋",
+        "鸡肉",
+        "200g"
+      ]
+    },
+    "memory:memory/2026-05-19.md:1:18": {
+      "key": "memory:memory/2026-05-19.md:1:18",
+      "path": "memory/2026-05-19.md",
+      "startLine": 1,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "# 2026-05-19 Memory Log ## 每日站会汇报生成 - 作为cron任务执行，基于memory日志、cron记录、MEMORY.md生成2026-05-18日报 - 数据源：2026-05-18.md内容 + 4个cron任务执行记录 + MEMORY.md长期记忆 - 报告完成：昨日完成事项、今日建议、待解决问题完整覆盖 - 检查结果：所有cron任务正常执行，除每日推送检查有历史错误外系统状态良好 ## Planning系统运行记录 - 为站会汇报任务创建完整规划：task_plan.md + findings.md + progress.md - 确保planning-with-files系统正常运行 - 规划任务按标准工作流程完成，双重检查机制生效 ## 系统状态确认 - memory日志连续性保持正常 - cron任务投递配置稳定 - MEMORY.md已更新并保持同步 - 所有文件规范执行（日期组织、planning分离）",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-23T23:42:37.593Z",
+      "lastRecalledAt": "2026-06-23T23:42:37.593Z",
+      "queryHashes": [
+        "57501403ad71"
+      ],
+      "recallDays": [
+        "2026-06-24"
+      ],
+      "conceptTags": [
+        "memory.md生成2026-05-18日报",
+        "memory.md长期记忆",
+        "task-plan.md",
+        "findings.md",
+        "progress.md",
+        "确保planning-with-files系统正常运行",
+        "memory.md已更新并保持同步",
+        "log"
+      ]
+    },
+    "memory:memory/2026-05-18.md:1:14": {
+      "key": "memory:memory/2026-05-18.md:1:14",
+      "path": "memory/2026-05-18.md",
+      "startLine": 1,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "# 2026-05-18 Memory Log ## 苏格拉底式交互 - 用户要求将苏格拉底式提问写入长期特征 - 已更新 SOUL.md，新增\"交互方式：苏格拉底式提问\"章节 - 包含六层提问框架、何时给答案/何时坚持提问的规则 ## Addy Osmani 文章分析任务 - 用户要求抓取 https://x.com/addyosmani/status/2056078124346228860 - 使用 x-tweet-fetcher 抓取，是 X Article 长文 \"Don't Outsource the Learning\" - 作者：Addy Osmani（Google Chrome 团队核心成员） - 1376字，讨论 AI 时代开发者认知退化问题 - 用户要求用\"雷军skill\"总结分析 + HTML可视化截图",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-23T23:42:37.593Z",
+      "lastRecalledAt": "2026-06-23T23:42:37.593Z",
+      "queryHashes": [
+        "57501403ad71"
+      ],
+      "recallDays": [
+        "2026-06-24"
+      ],
+      "conceptTags": [
+        "soul.md",
+        "何时给答案/何时坚持提问的规则",
+        "x-tweet-fetcher",
+        "log",
+        "苏格拉底",
+        "交互",
+        "用户",
+        "要求"
+      ]
+    },
+    "memory:memory/2026-06-16.md:1:33": {
+      "key": "memory:memory/2026-06-16.md:1:33",
+      "path": "memory/2026-06-16.md",
+      "startLine": 1,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "# 2026-06-16 小马工作日志 ## 定时任务执行记录 ### 每日AI热点推送 (07:20) - **任务ID**: c8e77053-9bb4-4afc-b783-23322faf9545 - **状态**: ✅ 正常执行 - **主要内容**: 6条热点新闻 - SpaceX斥资60亿美元收购编程工具Cursor - 本地AI模型运行体验显著改善 - 荷兰发布自主语言模型GPT-NL - AI对非虚构自助书籍市场形成冲击 - Gartner警示40% AI代理面临淘汰 - Fluxmail上线AI邮件助手 - **关键词**: AI收购、本地化、市场影响、商业化、企业应用 ### AI Builders 每日简报 (07:30) - **任务ID**: bfaef19e-a325-4198-a6ab-fcf17d361e07 - **状态**: ✅ 正常执行 - **主要内容**: 中英对照简报，包含多位CEO观点 - Swyx: goblingate项目进展时间线 - Josh Woodward: Google Gemini应用招募高级测试用户 - Peter Yang: Codex浏览器功能过于出色 - Amjad Masad: Mistral轻量法语模型Le Chaton Fat - Guillermo Rauch: 2026年无服务器与服务器最终融合 - Aaron Levie: AI智能定制化趋势 - **关键词**: 测试招募、浏览器功能、模型更新、基础设施融合 ### 每日站会汇报 (08:0",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-23T23:42:42.094Z",
+      "lastRecalledAt": "2026-06-23T23:42:42.094Z",
+      "queryHashes": [
+        "0818465a7f6f"
+      ],
+      "recallDays": [
+        "2026-06-24"
+      ],
+      "conceptTags": [
+        "gpt",
+        "荷兰发布自主语言模型gpt-nl",
+        "小马",
+        "工作",
+        "日志",
+        "任务",
+        "执行",
+        "记录"
       ]
     }
   }

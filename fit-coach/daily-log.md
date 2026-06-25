@@ -1,5 +1,15 @@
 # Personal Fit Daily Log
 
+## 2026-06-25
+
+- Weight: 87.4kg
+- Meals:
+- Workout:
+- Sleep:
+- Body signals:
+- Notes:
+- Assistant assessment:
+
 ## 2026-06-24
 
 - Weight: 87.7kg

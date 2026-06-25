@@ -104,6 +104,14 @@
     "compound-eng-file-todos": {
       "version": "2.55.1",
       "installedAt": 1776135482899
+    },
+    "planning-with-files": {
+      "version": "2.26.1",
+      "installedAt": 1777292082623
+    },
+    "personal-fit-coach": {
+      "version": "1.0.0",
+      "installedAt": 1779839653181
     }
   }
 }

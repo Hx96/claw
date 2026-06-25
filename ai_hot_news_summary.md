@@ -1,39 +1,37 @@
-**Reallocating $100/Month Claude Code Spend to Zed and OpenRouter**
-中文摘要：开发者分享每月节省$100 Claude Code费用转用Zed和OpenRouter的经验，展示AI编码工具成本优化方案
-🔗 [原文](https://braw.dev/blog/2026-04-06-reallocating-100-month-claude-spend/)
+# 今日AI热点推送 - 2026年5月15日
 
-**Research-Driven Agents: When an agent reads before it codes**
-中文摘要：SkyPilot推出研究驱动型Agent工作流，让AI在编码前先进行信息调研，提升代码质量
-🔗 [原文](https://blog.skypilot.co/research-driven-agents/)
+**I believe there are entire companies right now under AI psychosis**
+中文摘要：Mitchell Hashimoto警告AI产业存在群体性疯狂现象，公司过度投入AI项目可能造成资源浪费，514分热度引发业界深思。
+🔗 [原文](https://twitter.com/mitchellh/status/2055380239711457578)
 
-**MegaTrain: Full Precision Training of 100B+ Parameter Large Language Models**
-中文摘要：论文提出1000亿参数LLM全精度训练新方法，有效解决传统训练中的精度损失问题
-🔗 [原文](https://arxiv.org/abs/2604.05091)
+**2026上半年最火赛道：具身智能行业前4月融资超200笔，总规模超550亿元**
+中文摘要：具身智能成为2026年最受关注赛道，前4个月融资笔数超200笔，总规模突破550亿元，资本大量涌入AI实体化应用领域。
+🔗 [原文](https://36kr.com/p/3809911566704388?f=rss)
 
-**OpenAI广告收入预计今年将达25亿美元**
-中文摘要：OpenAI预计2026年广告收入达25亿美元，成为支撑AI开发成本的新增长引擎
-🔗 [原文](https://36kr.com/newsflashes/3760203075207936?f=rss)
+**Building "Sweets Vault" - a multimodal Gemini Agent with physical hardware integration**
+中文摘要：开发者构建结合物理硬件的多模态Gemini Agent项目，实现AI与实体世界的深度交互，展示Agent技术新方向。
+🔗 [原文](https://dev.to/googleai/building-sweets-vault-a-multimodal-gemini-agent-with-physical-hardware-integration-1nmh)
 
-**Meta Muse Spark: Meta's smart multimodal AI that understands your world**
-中文摘要：Meta推出多模态AI Muse Spark，能理解用户环境并提供智能交互体验
-🔗 [原文](https://www.producthunt.com/products/meta)
+**I Built a Multi-Agent AI Tribunal with Gemma 4**
+中文摘要：开发者使用Gemma 4构建多Agent AI法庭系统，探索AI在司法领域的应用，18个反应引发技术社区热议。
+🔗 [原文](https://dev.to/ujja/i-built-a-multi-agent-ai-tribunal-with-gemma-4-3ood)
 
-**The AI Great Leap Forward**
-中文摘要：深入分析AI技术跨越式发展现状，探讨AGI未来技术路径和产业化前景
-🔗 [原文](https://lobste.rs/s/nmhkdl/ai_great_leap_forward)
+**LLM generated submissions should be disallowed**
+中文摘要：Lobsters社区热议AI生成内容是否应被禁止，89分热度反映开发者对AI内容真实性的深度担忧和讨论。
+🔗 [原文](https://lobste.rs/s/29pm2f/llm_generated_submissions_should_be)
 
-**CoreWeave将Meta AI合作规模扩大至210亿美元**
-中文摘要：CoreWeave与Meta的AI基础设施合作扩展至210亿美元，巩固大规模AI工作负载提供商地位
-🔗 [原文](https://36kr.com/newsflashes/3760204892455425?f=rss)
+**MemLens: Benchmarking Multimodal Long-Term Memory in Large Language Models**
+中文摘要：最新论文提出MemLens框架，专用于评估大语言模型的多模态长期记忆能力，61个upvotes显示技术价值。
+🔗 [原文](https://huggingface.co/papers/2605.14906)
 
-**Claude Managed Agents: Pre-built agent harness on managed infrastructure**
-中文摘要：Anthropic推出托管版Claude Agents，提供预制Agent工具链和基础设施支持
-🔗 [原文](https://www.producthunt.com/products/claude)
+**Self-Distilled Agentic Reinforcement Learning**
+中文摘要：新研究提出自蒸馏强化学习方法用于Agent训练，有效提升AI Agent自主学习能力，66个upvotes获得学界关注。
+🔗 [原文](https://huggingface.co/papers/2605.15155)
 
-**Orca: Your control center for parallel AI agents**
-中文摘要：Orca平台提供并行AI Agent管理控制中心，支持多Agent协同工作流
-🔗 [原文](https://www.producthunt.com/products/orca-5)
+**WildClawBench: A Benchmark for Real-World, Long-Horizon AI Agent Evaluation**
+中文摘要：推出真实世界、长期视野的AI Agent评估基准，解决现有测试环境与实际应用脱节问题，36个upvotes显示行业需求。
+🔗 [原文](https://huggingface.co/papers/2605.10912)
 
-**Think in Strokes, Not Pixels: Process-Driven Image Generation**
-中文摘要：新研究提出笔画驱动而非像素驱动的图像生成方法，提升图像质量和可控性
-🔗 [原文](https://arxiv.org/abs/2604.04746)
+**现在程序员就业市场被ai冲击的怎么样了**
+中文摘要：V2ex热议AI对程序员就业市场的影响，60个回复反映技术从业者对AI替代趋势的普遍关注和担忧。
+🔗 [原文](https://www.v2ex.com/t/1212976)

@@ -1,0 +1,31 @@
+**GPT-5.5 Bio Bug Bounty**
+中文摘要：OpenAI发布生物安全专项漏洞奖励计划，重点关注AI在生物医药领域的潜在风险
+🔗 [原文](https://openai.com/index/gpt-5-5-bio-bug-bounty/)
+
+**元戎启行全面押注大模型自动驾驶**
+中文摘要：DeepSeek多模态技术专家加入，CEO称大模型自动驾驶路线已远优于小模型技术
+🔗 [原文](https://36kr.com/newsflashes/3782028988882178?f=rss)
+
+**DeepSeek-V4: 开源1M上下文大模型时代**
+中文摘要：DeepSeek推出百万token上下文能力的开源大模型，挑战闭源巨头
+🔗 [原文](https://www.producthunt.com/products/deepseek)
+
+**智用开物获近亿投资，AI进厂最后一公里**
+中文摘要：微软核心团队创办工业智能体公司，获立讯精密家族投资，专注高价值AI应用落地
+🔗 [原文](https://36kr.com/p/3781548853533959?f=rss)
+
+**DR-Venus：边缘深度研究Agent突破**
+中文摘要：基于物理模型的边缘AI智能体，推动边缘计算与深度推理结合
+🔗 [原文](https://huggingface.co/papers/2604.19859)
+
+**卡尔动力发布KargoBot Inside战略**
+中文摘要：全球首个"AI+Robot+Service"全栈赋能货运战略，面向L4自动驾驶下一个十年
+🔗 [原文](https://36kr.com/newsflashes/3782201831742724?f=rss)
+
+**OpenAI Codex 3.0实现全自动化开发**
+中文摘要：Codex现可全自动构建、测试和调试代码，AI编程能力再次飞跃
+🔗 [原文](https://www.producthunt.com/products/codex-3-0-by-openai)
+
+**微盟AI业务收入破亿，推行AI First战略**
+中文摘要：SaaS巨头微盟AI相关收入首次突破亿元，全面转型AI优先战略
+🔗 [原文](https://36kr.com/p/3780556402531330?f=rss)

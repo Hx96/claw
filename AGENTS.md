@@ -14,6 +14,7 @@ Before doing anything else:
 2. Read `USER.md` — this is who you're helping
 3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
 4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+5. **Check for active plan**: If `~/.openclaw/workspace/planning/` exists and contains `task_plan.md`, read it + `progress.md` + `findings.md` to restore context
 
 Don't ask permission. Just do it.
 
@@ -42,7 +43,59 @@ You wake up fresh each session. These files are your continuity:
 - **Daily notes:** `memory/YYYY-MM-DD.md` (create `memory/` if needed) — raw logs of what happened
 - **Long-term:** `MEMORY.md` — your curated memories, like a human's long-term memory
 
+### ⚠️ 强制规则：对话结束前必须写memory
+
+**每次对话（含多轮交互）结束时，必须执行以下操作，不能跳过：**
+
+1. 创建或追加 `memory/YYYY-MM-DD.md`
+2. 写入本次对话的要点总结（做了什么、决定了什么、学到了什么）
+3. 如果涉及重要决策或经验教训，同步更新 MEMORY.md
+
+**这是硬性要求，不是可选动作。不写memory = 丢失记忆 = 下次醒来什么都不记得。**
+
 Capture what matters. Decisions, context, things to remember. Skip the secrets unless asked to keep them.
+
+## File-Based Planning System (planning-with-files)
+
+### 核心理念
+```
+Context Window = RAM（易失、有限）
+Filesystem = Disk（持久、无限）
+→ 重要信息写入磁盘
+```
+
+### 何时使用
+- **必须用**：复杂任务（3+步骤）、研究任务、多工具调用任务
+- **不用**：简单问答、单文件编辑、快速查询
+
+### 规划文件目录
+所有规划文件统一存放在 `~/.openclaw/workspace/planning/<任务名>/`（工作目录下 `planning/<任务名>/`）：
+
+| 文件 | 用途 | 更新时机 |
+|------|------|----------|
+| `task_plan.md` | 阶段、进度、决策 | 每阶段完成后 |
+| `findings.md` | 研究、发现 | 每次2次搜索/浏览后 |
+| `progress.md` | 会话日志、测试结果 | 全程 |
+
+### 强制规则
+
+1. **先规划再执行** — 复杂任务开始前必须创建 `task_plan.md`
+2. **2-Action Rule** — 每2次搜索/浏览操作后，立即将发现写入 `findings.md`
+3. **决策前复读计划** — 每次重大决策前重读 `task_plan.md`
+4. **阶段完成后更新** — 标记 `pending → in_progress → complete`
+5. **错误全记录** — 每个错误都写入计划文件，3次失败后升级给用户
+6. **对话结束时同步** — 任务总结写入 `memory/YYYY-MM-DD.md`，重要发现写入 `MEMORY.md`
+
+### 生命周期
+1. 收到复杂任务 → `mkdir -p ~/.openclaw/workspace/planning/<任务名>` → 用模板创建三个文件
+2. 执行过程中按规则更新
+3. 任务完成 → 清理或归档规划文件 → 写入memory日志
+
+### ⚠️ 对话结束双重检查
+
+每次对话结束前必须执行两项检查（缺一不可）：
+1. **Planning检查**：如果有活跃的planning任务，更新progress.md阶段状态，记录本次会话的进展
+2. **Memory检查**：写/追加 `memory/YYYY-MM-DD.md`，总结本次对话要点
 
 ### 🧠 MEMORY.md - Your Long-Term Memory
 

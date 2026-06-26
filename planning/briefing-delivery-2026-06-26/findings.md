@@ -6,3 +6,4 @@
 - 2026-06-26 07:46 CST: `AI Builders 每日简报` 当前 job state 显示 `lastRunAtMs=1782430200010`、`lastRunStatus=ok`、`lastDeliveryStatus=delivered`、`consecutiveErrors=0`。
 - 2026-06-26 07:53 CST: 微信长消息补发后用户仍只看到一条，后续应优先采用分条发送而不是整段转发。
 - 2026-06-26 07:58 CST: 用户明确偏好为“英文在前，中文在后”的中英对照格式；这是持久偏好，已回写到 cron prompt 而不是临时备注。
+- 2026-06-26 08:13 CST: 用户要求 Git 提交仍为必须，但应异步执行；因此改为 `08:05` 独立 `每日站会Git同步` 任务，`08:10` 检查任务也同步纳入 Git 同步结果。

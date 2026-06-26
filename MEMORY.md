@@ -169,6 +169,10 @@ _上次更新: 2026-06-22_
   - 投递逻辑完全交给系统层 delivery 配置，AI只负责生成内容
 - 磁盘使用率：84%（04-11）→ 53%（04-17，已清理6G）
 
+### 2026-06-27
+- `AI Builders 每日简报` 连续两天出现同类异常：cron 状态与 run history 都显示 `delivered`，但用户微信侧未见消息。根因更像微信展示/投递表层，而非生成失败。
+- 处理策略：不要迷信 `lastDeliveryStatus=delivered`。对微信长消息，优先压短输出而不是继续堆内容；已将 Builders 简报改为短版（每板块3条、短英文引文、单句中文、无冗余结尾）。
+
 ## 教训与经验
 
 1. **cron投递：系统层delivery vs 手动message** — 隔离会话没有对话上下文，手动调message会缺target报错。正确做法：`delivery.mode=announce` + 正确的channel/to/accountId，让系统自动投递，AI只输出内容

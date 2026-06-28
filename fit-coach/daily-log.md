@@ -1,14 +1,38 @@
 # Personal Fit Daily Log
 
-## 2026-06-27
+## 2026-06-29
 
-- Weight: 87.2kg
+- Weight: 87.9kg
 - Meals:
 - Workout:
 - Sleep:
 - Body signals:
-- Notes: Early weigh-in logged. Compared with 2026-06-26, weight is -0.3kg.
+- Notes: Morning weigh-in. Compared with 2026-06-28, weight is +0.7kg.
 - Assistant assessment:
+
+## 2026-06-28
+
+- Weight: 87.2kg
+- Meals:
+  - 早餐：灌汤包×4，酱香饼50g，油条50g
+- Workout:
+- Sleep:
+- Body signals:
+- Notes: Early weigh-in logged. Compared with 2026-06-27, weight is flat (0.0kg). Breakfast logged.
+- Assistant assessment: 这顿早餐以碳水和油脂为主，粗估约500-700kcal，蛋白质大约12-18g。问题不在“吃了早餐”，而在蛋白质偏低、油脂占比偏高。今天后两餐要主动往高蛋白、低油、少额外甜饮/零食方向拉，不然全天很容易超标。
+
+## 2026-06-27
+
+- Weight: 87.2kg
+- Meals:
+  - 酸奶 250g
+  - 牛肉 30g
+  - 旺仔牛奶 250ml
+- Workout:
+- Sleep:
+- Body signals:
+- Notes: Early weigh-in logged. Compared with 2026-06-26, weight is -0.3kg. Current logged intake is a partial day estimate.
+- Assistant assessment: 已记录摄入。按常见商品估算：酸奶250g约150-220kcal、蛋白质约6-9g；牛肉30g约60-90kcal、蛋白质约7-9g；旺仔牛奶250ml约145-170kcal、蛋白质约3-5g。当前合计约355-480kcal，蛋白质约16-23g。
 
 ## 2026-06-26
 

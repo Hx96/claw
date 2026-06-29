@@ -43,6 +43,20 @@
       "source": "community",
       "version": "1.0.0",
       "installedAt": "2026-06-28T23:44:14Z"
+    },
+    "finance-daily-report-wb": {
+      "name": "财经日报",
+      "zip_url": "https://api.skillhub.cn/api/v1/download?slug=finance-daily-report-wb",
+      "source": "community",
+      "version": "1.0.0",
+      "installedAt": "2026-06-29T05:25:33Z"
+    },
+    "stock-market-pro": {
+      "name": "Stock Market Pro",
+      "zip_url": "https://api.skillhub.cn/api/v1/download?slug=stock-market-pro",
+      "source": "community",
+      "version": "1.2.12",
+      "installedAt": "2026-06-29T10:27:00Z"
     }
   }
 }

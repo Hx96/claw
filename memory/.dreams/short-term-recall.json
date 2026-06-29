@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-24T00:06:28.000Z",
+  "updatedAt": "2026-06-27T03:57:03.705Z",
   "entries": {
     "memory:memory/2026-03-25.md:45:109": {
       "key": "memory:memory/2026-03-25.md:45:109",
@@ -522,23 +522,25 @@
       "endLine": 12,
       "source": "memory",
       "snippet": "# 2026-05-12 日志 ## ljg-skills 技能地图分析 - 分析了 GitHub 仓库 lijigang/ljg-skills 的全部 20 个 skill - 逐个获取 SKILL.md 内容，提取名称、版本、功能描述、触发词 - 生成分类可视化 HTML（5大类20个skill卡片）+ PNG 截图发送微信 - 分类：认知原子(7) / 输出铸造(2) / 复合工作流(4) / 深度分析(5) / 系统运维(2) - 改造优先级评估：高(rank/paper/think/card)、中(writes/learn/qa/read/present)、低(travel/push/skill-map) - 关键特征：全部 org-mode 输出，大部分 prompt 驱动，card/present 依赖 playwright 截图 - 文件位置：/root/outputs/2026-05-12/final/ljg-skills-map.html",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-26T23:52:35.651Z",
-      "lastRecalledAt": "2026-06-24T00:06:25.184Z",
+      "lastRecalledAt": "2026-06-27T03:57:03.705Z",
       "queryHashes": [
         "25588d6630af",
         "930d978de32c",
         "78122c876d07",
-        "b466c76a2546"
+        "b466c76a2546",
+        "e34002c26196"
       ],
       "recallDays": [
         "2026-05-27",
         "2026-06-02",
-        "2026-06-24"
+        "2026-06-24",
+        "2026-06-27"
       ],
       "conceptTags": [
         "ljg-skills",
@@ -707,6 +709,37 @@
         "任务",
         "执行",
         "记录"
+      ]
+    },
+    "memory:memory/2026-05-13.md:1:8": {
+      "key": "memory:memory/2026-05-13.md:1:8",
+      "path": "memory/2026-05-13.md",
+      "startLine": 1,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "# 2026-05-13 日志 ## 会话活动 - main session 活跃（约 08:23，84K tokens） - weixin direct session 活跃（约 08:26，43K tokens） - 多个 cron 定时任务正常运行",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-27T03:57:03.705Z",
+      "lastRecalledAt": "2026-06-27T03:57:03.705Z",
+      "queryHashes": [
+        "e34002c26196"
+      ],
+      "recallDays": [
+        "2026-06-27"
+      ],
+      "conceptTags": [
+        "日志",
+        "会话",
+        "活动",
+        "活跃",
+        "23,84k",
+        "tokens",
+        "weixin",
+        "direct"
       ]
     }
   }

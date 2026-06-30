@@ -1,5 +1,15 @@
 # Personal Fit Daily Log
 
+## 2026-07-01
+
+- Weight: 87.8kg
+- Meals:
+- Workout:
+- Sleep:
+- Body signals:
+- Notes: Morning weigh-in. Compared with 2026-06-30, weight is flat (0.0kg).
+- Assistant assessment:
+
 ## 2026-06-30
 
 - Weight: 87.8kg

@@ -1,5 +1,16 @@
 # Personal Fit Daily Log
 
+## 2026-06-30
+
+- Weight: 87.8kg
+- Meals:
+  - 早餐：杂粮煎饼×1，瑞幸美式（单份奶）
+- Workout:
+- Sleep:
+- Body signals:
+- Notes: Morning weigh-in. Compared with 2026-06-29, weight is -0.1kg.
+- Assistant assessment: 杂粮煎饼以碳水为主（薄饼皮+酱料），粗估约350-450kcal，蛋白质约10-15g。美式加单份奶几乎不增加热量（~20kcal）。整体早餐蛋白质偏低，午餐和晚餐需要主动补蛋白质到40-50g/餐。
+
 ## 2026-06-29
 
 - Weight: 87.9kg

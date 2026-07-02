@@ -1,24 +1,41 @@
 # Personal Fit Daily Log
 
-## 2026-07-02
+## 2026-07-03
 
-- Weight: 87.1kg
+- Weight: 87.4kg
 - Meals:
 - Workout:
 - Sleep:
 - Body signals:
-- Notes: Morning weigh-in. Compared with 2026-07-01, weight is -0.7kg.
+- Notes: Morning weigh-in. Compared with 2026-07-02, weight is +0.3kg.
 - Assistant assessment:
+
+## 2026-07-02
+
+- Weight: 87.1kg
+- Meals:
+  - 早餐：鸡蛋×2，美式×1，牛奶×1（同昨天）
+  - 午餐：波奇饭×1，鸡胸肉×1（同昨天）
+  - 晚餐：煎饼果子（加肉松+松板肉）×1，玉米×1
+- Workout: 中午运动30min，消耗~150kcal
+- Sleep:
+- Body signals:
+- Notes: Morning weigh-in. Compared with 2026-07-01, weight is -0.7kg.
+- Assistant assessment: 早餐~300kcal/蛋白质20g。午餐~550kcal/蛋白质40g。晚餐煎饼果子加肉松+松板肉约500-650kcal/蛋白质15-20g（煎饼皮是碳水，肉松和松板肉有蛋白质但油脂偏高，松板肉是猪五花）。玉米1根约100-150kcal/蛋白质3-4g。全天合计约1450-1650kcal，蛋白质约78-91g。加运动消耗150kcal，实际缺口=TDEE(~2300)-摄入(~1550)-运动(150)=~600kcal缺口，减重节奏不错。蛋白质仍偏低。
 
 ## 2026-07-01
 
 - Weight: 87.8kg
 - Meals:
+  - 早餐：鸡蛋×2，美式×1，牛奶×1
+  - 午餐：波奇饭×1，鸡胸肉×1
+  - 晚餐：小笼包×8
+  - 加餐：烧烤~100g，蜜饯~100g，蒙都风干牛肉100g
 - Workout:
 - Sleep:
 - Body signals:
 - Notes: Morning weigh-in. Compared with 2026-06-30, weight is flat (0.0kg).
-- Assistant assessment:
+- Assistant assessment: 早餐~300kcal/蛋白质20g（不错）。午餐~500-650kcal/蛋白质35-45g（全天最佳）。晚餐小笼包×8约400-560kcal/蛋白质16-24g。加餐烧烤100g约200-350kcal/蛋白质15-25g（看肉类）。蜜饯100g约300-350kcal（纯糖炸弹）。全天合计约1700-2110kcal，蛋白质约86-110g。加了烧烤和蜜饯后，热量从"达标甚至偏低"变成了"踩线/略超"，蛋白质仍然没到130g下限。
 
 ## 2026-06-30
 

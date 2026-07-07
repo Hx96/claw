@@ -1,5 +1,29 @@
 # Personal Fit Daily Log
 
+## 2026-07-07
+
+- Weight: 86.6kg
+- Meals:
+  - 早餐：美式咖啡×1，鸡蛋×2
+  - 午餐：波奇饭×1，纯牛奶×1
+  - 晚餐：红油拌菜（素菜~100g + 荤菜~50g）
+  - 加餐：牛肉~150g，酸奶×1
+- Workout:
+- Sleep:
+- Body signals:
+- Notes: Morning weigh-in. Compared with 2026-07-06, weight is -0.7kg.
+- Assistant assessment: 早餐~200kcal/蛋白质12g（2个鸡蛋+黑咖啡，干净）。午餐~500-600kcal/蛋白质25-35g（波奇饭+牛奶，不错）。晚餐红油拌菜素100g+荤50g约200-350kcal/蛋白质10-15g（油脂偏高但量不大）。加餐牛肉150g约250-350kcal/蛋白质30-40g（优质蛋白质来源）。全天合计约1150-1500kcal，蛋白质约77-102g。热量控制不错，但蛋白质仍低于130g下限，主要缺在午餐和晚餐的蛋白质密度。
+
+## 2026-07-06
+
+- Weight: 87.3kg
+- Meals:
+- Workout:
+- Sleep:
+- Body signals:
+- Notes: Morning weigh-in. Compared with 2026-07-03, weight is -0.1kg.
+- Assistant assessment:
+
 ## 2026-07-03
 
 - Weight: 87.4kg

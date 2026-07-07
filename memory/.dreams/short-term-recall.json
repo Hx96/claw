@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-27T03:57:03.705Z",
+  "updatedAt": "2026-07-05T22:33:30.039Z",
   "entries": {
     "memory:memory/2026-03-25.md:45:109": {
       "key": "memory:memory/2026-03-25.md:45:109",
@@ -591,21 +591,23 @@
       "endLine": 6,
       "source": "memory",
       "snippet": "## 06:38 饮食记录 - 昨晚加餐：冰淇淋 + 鸡肉200g - 体重：87.7kg",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-06-23T23:41:50.107Z",
-      "lastRecalledAt": "2026-06-24T00:06:28.000Z",
+      "lastRecalledAt": "2026-07-05T22:33:30.039Z",
       "queryHashes": [
         "9b65675b5a86",
         "57501403ad71",
         "b466c76a2546",
-        "e3b7cc3acc61"
+        "e3b7cc3acc61",
+        "8046ae4523f5"
       ],
       "recallDays": [
-        "2026-06-24"
+        "2026-06-24",
+        "2026-07-06"
       ],
       "conceptTags": [
         "87.7kg",
@@ -718,18 +720,20 @@
       "endLine": 8,
       "source": "memory",
       "snippet": "# 2026-05-13 日志 ## 会话活动 - main session 活跃（约 08:23，84K tokens） - weixin direct session 活跃（约 08:26，43K tokens） - 多个 cron 定时任务正常运行",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-06-27T03:57:03.705Z",
-      "lastRecalledAt": "2026-06-27T03:57:03.705Z",
+      "lastRecalledAt": "2026-07-05T00:40:43.057Z",
       "queryHashes": [
-        "e34002c26196"
+        "e34002c26196",
+        "76863f218902"
       ],
       "recallDays": [
-        "2026-06-27"
+        "2026-06-27",
+        "2026-07-05"
       ],
       "conceptTags": [
         "日志",
@@ -740,6 +744,227 @@
         "tokens",
         "weixin",
         "direct"
+      ]
+    },
+    "memory:memory/2026-05-09.md:1:19": {
+      "key": "memory:memory/2026-05-09.md:1:19",
+      "path": "memory/2026-05-09.md",
+      "startLine": 1,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "# 2026-05-09 (Saturday) ## Session Activity - **10:18** Heartbeat check (current) - **08:18** WeChat heartbeat poll - **08:13** WeChat direct conversation — moderate interaction (540 output tokens, 29k input tokens) - **08:13** Main direct session activity (27 output tokens, 78k input tokens) - **08:10** Cron task 9fe7e21e ran (31 output tokens, ~22k input) - **08:00** Cron task 1e5efc7a ran (733 output tokens, ~44k input) - **07:30** Cron task bfaef19e ran (2.5k output tokens, ~192k input) - **07:20** Cron task c8e77053 ran (769 output tokens, ~25k input) ## Notes - Routine day with scheduled cron tasks and heartbeat polls running normally. - WeChat direct conversation had some user int",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-07-05T00:40:43.057Z",
+      "lastRecalledAt": "2026-07-05T00:40:43.057Z",
+      "queryHashes": [
+        "76863f218902"
+      ],
+      "recallDays": [
+        "2026-07-05"
+      ],
+      "conceptTags": [
+        "2.5k",
+        "saturday",
+        "activity",
+        "heartbeat",
+        "check",
+        "current",
+        "wechat",
+        "poll"
+      ]
+    },
+    "memory:memory/2026-05-08.md:1:13": {
+      "key": "memory:memory/2026-05-08.md:1:13",
+      "path": "memory/2026-05-08.md",
+      "startLine": 1,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "# 2026-05-08 (Friday) ## Session Activity - **08:16** WeChat direct conversation — significant interaction (939 output tokens, 21.5k input tokens) - **08:00** Cron task 1e5efc7a ran (736 output tokens, ~51k input) - **07:30** Cron task bfaef19e ran (1.4k output tokens, ~16k input) - **07:20** Cron task c8e77053 ran (691 output tokens, ~25.8k input) ## Notes - No user-reported issues or alerts.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-07-05T00:40:43.057Z",
+      "lastRecalledAt": "2026-07-05T00:40:43.057Z",
+      "queryHashes": [
+        "76863f218902"
+      ],
+      "recallDays": [
+        "2026-07-05"
+      ],
+      "conceptTags": [
+        "21.5k",
+        "1.4k",
+        "25.8k",
+        "user-reported",
+        "friday",
+        "activity",
+        "wechat",
+        "direct"
+      ]
+    },
+    "memory:memory/2026-06-28.md:9:13": {
+      "key": "memory:memory/2026-06-28.md:9:13",
+      "path": "memory/2026-06-28.md",
+      "startLine": 9,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "- 取数结论：昨天有明确证据的事项包括 AI 热点收集、`AI Builders 每日简报` 微信侧未见消息的异常排查、fit 体重 `87.2kg` 和部分饮食记录、以及“Git 写入后必须检查推送/远端状态”的新规则；cron 侧还确认了 `每日站会Git同步` 成功、`每日推送检查` 显示四个早间任务正常。 - 排除规则生效：`每日AI热点推送` 和 `AI Builders 每日简报` 单独查询到的最近一次 run 已经是 2026-06-28，因此未混入昨日汇报。 - 08:10 cron `每日推送检查`：检查 `每日AI热点推送`、`AI Builders 每日简报`、`每日站会汇报`、`每日站会Git同步` 四个早间任务，四者 `lastRunStatus=ok` 且 `consecutiveErrors=0`，均正常。 - 用户反馈 `AI Builders 每日简报` 实际未收到。排查确认：`07:30` run 在 cron 侧记录为 `status=ok`、`delivered=true`，但这不能证明微信侧真实可见，属于再次出现的“delivered 假阳性”。 - 修复动作：继续收紧 `AI Builders 每日简报` 的 cron prompt，改为全文最多 4 条、每板块最多 2 条、英文 110 字符内、中文 32 字内，明确优先微信可见性而非完整性。",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-07-05T00:40:43.057Z",
+      "lastRecalledAt": "2026-07-05T22:33:30.039Z",
+      "queryHashes": [
+        "76863f218902",
+        "8046ae4523f5"
+      ],
+      "recallDays": [
+        "2026-07-05",
+        "2026-07-06"
+      ],
+      "conceptTags": [
+        "87.2kg",
+        "写入后必须检查推送/远端状态",
+        "结论",
+        "昨天",
+        "明确",
+        "证据",
+        "事项",
+        "包括"
+      ]
+    },
+    "memory:memory/2026-06-26.md:1:7": {
+      "key": "memory:memory/2026-06-26.md:1:7",
+      "path": "memory/2026-06-26.md",
+      "startLine": 1,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "## 2026-06-26 - 记录健身体重：87.5kg，更新 `fit-coach/profile.md` 与 `fit-coach/daily-log.md`。 - 用户查看 fit 预览与趋势分析；结论是 87kg 附近横盘主要来自热量赤字不稳定，而非真正平台期。 - 排查晨间 `AI Builders 每日简报` 未收到问题：`/root/.openclaw/cron/jobs.json` 显示 07:30 任务执行成功，`lastDeliveryStatus=delivered`，run summary 里也有今日简报正文，问题更像微信展示/折叠层，不是 cron 未跑。 - 用户确认明日起 `AI Builders 每日简报` 采用“先英文、后中文”的中英对照格式，并强调短块可读性；已直接更新 cron prompt。 - 排查 `每日站会汇报` 08:00 timeout：最新 run 在 300s 打满超时。先移除了同步 Git，再按用户要求改为异步架构：`08:00` 只发站会，新增 `08:05 每日站会Git同步` 独立提交/推送，`08:10` 检查任务也纳入 Git 同步结果。",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-07-05T00:40:43.057Z",
+      "lastRecalledAt": "2026-07-05T00:40:43.057Z",
+      "queryHashes": [
+        "76863f218902"
+      ],
+      "recallDays": [
+        "2026-07-05"
+      ],
+      "conceptTags": [
+        "87.5kg",
+        "fit-coach/profile.md",
+        "fit-coach/daily-log.md",
+        "openclaw/cron/jobs.json",
+        "问题更像微信展示/折叠层",
+        "独立提交/推送",
+        "记录",
+        "健身"
+      ]
+    },
+    "memory:memory/2026-06-28.md:1:9": {
+      "key": "memory:memory/2026-06-28.md:1:9",
+      "path": "memory/2026-06-28.md",
+      "startLine": 1,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "# 2026-06-28 - 07:20 cron `每日AI热点推送` 执行：按用户指定并行调用 8 个 opencli public API 源（HN top/new、36Kr news、HF top、Product Hunt today、Dev.to top、Lobsters hot、V2EX hot）。 - 筛选结果：今天高信号来源主要是 HN、HF、36Kr；Product Hunt 基本无 AI 信号，Dev.to/Lobsters/V2EX 多为弱信号或讨论噪音。 - 最终输出策略：按热度与相关性混合排序，优先 AI/LLM/Agent/编程工具/芯片半导体，生成 5-8 条适合手机阅读的精简中文推送。 - 过程管理：使用 planning-with-files，创建 `planning/daily-ai-news-push/` 并记录 plan/findings/progress。 - 自评分：事实准确 8/10，可执行 9/10，信息密度 8/10，推理链 8/10，时效 9/10；加权总分 8.4/10。 - 08:00 cron `每日站会汇报`：按任务要求取昨天 `2026-06-27`，读取 `memory/2026-06-27.md`、cron 列表与各任务最近 run summary，并参考 `MEMORY.md` 生成站会。 - 取数结论：昨天有明确证据的事项包括 AI 热点收集、`AI Builders 每日简报` 微信侧未见消息的异常排查、fit 体重 `87.2kg` 和部分饮食记录、以及“Git 写入后必须检查推送/远端状态”的新规则；",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-07-05T00:40:43.057Z",
+      "lastRecalledAt": "2026-07-05T22:33:30.039Z",
+      "queryHashes": [
+        "76863f218902",
+        "8046ae4523f5"
+      ],
+      "recallDays": [
+        "2026-07-05",
+        "2026-07-06"
+      ],
+      "conceptTags": [
+        "top/new",
+        "dev.to",
+        "dev.to/lobsters/v2ex",
+        "ai/llm/agent/编程工具/芯片半导体",
+        "5-8",
+        "planning-with-files",
+        "planning/daily-ai-news-push",
+        "plan/findings/progress"
+      ]
+    },
+    "memory:memory/2026-06-29.md:1:28": {
+      "key": "memory:memory/2026-06-29.md:1:28",
+      "path": "memory/2026-06-29.md",
+      "startLine": 1,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "# 2026-06-29 日志 ## 会话活动 ### 减脂记录 - 体重 87.9kg（比昨天+0.7kg），第5周周报生成 - 5周累计：87.0→87.9，反弹+0.9kg，执行不力 - 核心问题：饮食失控（每周1-2天暴食）、蛋白质不达标、训练零记录 ### 技能安装 1. **grill-me v1.0.0** — 结构化设计追问技能 2. **finance-daily-report-wb v1.0.0** — A股为主的财经日报（用户表示不关心A股） 3. **stock-market-pro v1.2.12** — yfinance驱动美股分析 - 依赖 yfinance（系统Python segfault，用 uv --script 隔离环境正常） - 新增 us_market_report.py：调用 yf.py 获取数据，生成微信日报 - 覆盖：标普500/纳指/道琼斯/VIX/10年美债/黄金/WTI原油 4. **美股大盘日报 cron 任务已创建** - ID: 51205edd-c6c5-4ad1-90b0-dd61adc7784b - 时间: 周二~周六 07:00 CST（对应美股交易日收盘后） - 手动触发验证通过，投递成功 ### 金融指数技能调研 - skillhub + clawhub 共搜到20+个金融/股票相关技能 ### 技术经验 - chromium-browser 在腾讯云轻量服务器是 snap 壳，无法直接用 - Playwright 截图用 NODE_PATH 指向 brows",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-07-05T22:33:30.039Z",
+      "lastRecalledAt": "2026-07-05T22:33:30.039Z",
+      "queryHashes": [
+        "8046ae4523f5"
+      ],
+      "recallDays": [
+        "2026-07-06"
+      ],
+      "conceptTags": [
+        "87.9kg",
+        "0.7kg",
+        "87.0",
+        "87.9",
+        "0.9kg",
+        "每周1-2天暴食",
+        "grill-me",
+        "v1.0.0"
+      ]
+    },
+    "memory:memory/2026-06-28.md:12:17": {
+      "key": "memory:memory/2026-06-28.md:12:17",
+      "path": "memory/2026-06-28.md",
+      "startLine": 12,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "- 用户反馈 `AI Builders 每日简报` 实际未收到。排查确认：`07:30` run 在 cron 侧记录为 `status=ok`、`delivered=true`，但这不能证明微信侧真实可见，属于再次出现的“delivered 假阳性”。 - 修复动作：继续收紧 `AI Builders 每日简报` 的 cron prompt，改为全文最多 4 条、每板块最多 2 条、英文 110 字符内、中文 32 字内，明确优先微信可见性而非完整性。 - 验证动作：通过 message 工具手动补发超短版 Builders 简报，消息 id `openclaw-weixin:1782613585572-cfce9e30`，用于验证当前会话链路正常。 - fit 记录：用户上报体重 `87.2kg`，已写入 `fit-coach/daily-log.md` 的 `2026-06-28` 条目，并同步 `fit-coach/profile.md` 当前体重日期。 - fit 记录：用户补充早餐 `4个灌汤包 + 50g酱香饼 + 50g油条`，已追加到 `fit-coach/daily-log.md`。粗估这顿约 `500-700kcal`、蛋白质约 `12-18g`，结构偏油偏碳水，后两餐需主动拉高蛋白并控油。",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-07-05T22:33:30.039Z",
+      "lastRecalledAt": "2026-07-05T22:33:30.039Z",
+      "queryHashes": [
+        "8046ae4523f5"
+      ],
+      "recallDays": [
+        "2026-07-06"
+      ],
+      "conceptTags": [
+        "openclaw-weixin",
+        "1782613585572-cfce9e30",
+        "87.2kg",
+        "fit-coach/daily-log.md",
+        "fit-coach/profile.md",
+        "500-700kcal",
+        "12-18g",
+        "用户"
       ]
     }
   }

@@ -1,5 +1,19 @@
 # Personal Fit Daily Log
 
+## 2026-07-08
+
+- Weight: 87.5kg
+- Meals:
+  - 早餐：鸡蛋×2，美式咖啡×1
+  - 午餐：无米饭，中餐炒菜+腊肉，纯牛奶×1
+  - 晚餐：蒸土豆，蒸玉米，鸡腿×1，卤素菜
+  - 加餐：牛肉~100g，奶皮子×1
+- Workout:
+- Sleep:
+- Body signals:
+- Notes: Morning weigh-in. Compared with 2026-07-07, weight is +0.9kg.
+- Assistant assessment: 早餐~180kcal/蛋白质12g。午餐炒菜+腊肉+牛奶，约450-650kcal/蛋白质20-30g（牛奶补了8g蛋白质）。晚餐蒸土豆+蒸玉米+鸡腿+卤素菜，约550-750kcal/蛋白质30-40g（鸡腿+卤素菜有蛋白质）。加餐牛肉100g约250kcal/蛋白质20-26g，奶皮子约150-200kcal/蛋白质5-8g。全天合计约1580-2030kcal，蛋白质约87-116g。比之前估算好不少，热量基本达标，蛋白质仍低于130g下限但差距缩小。
+
 ## 2026-07-07
 
 - Weight: 86.6kg

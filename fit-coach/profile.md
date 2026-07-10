@@ -3,7 +3,7 @@
 - Height: 178cm
 - Age: 30
 - Sex: Male
-- Current weight: 86.7kg (2026-07-09)
+- Current weight: 87.1kg (2026-07-10)
 - Body measurements:
 - Known constraints: 距骨软骨损伤 → 禁止跳跃/跑步/大重量深蹲，下肢用坐姿器械
 - Injury history: 踝关节肿胀（羽毛球后出现，06-21），建议暂停羽毛球

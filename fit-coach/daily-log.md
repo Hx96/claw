@@ -1,5 +1,23 @@
 # Personal Fit Daily Log
 
+## 2026-07-13
+- Weight: 87.2kg
+- Meals:
+- Workout:
+- Sleep:
+- Body signals:
+- Notes: Morning weigh-in. Compared with 2026-07-12, weight is -0.3kg.
+- Assistant assessment:
+
+## 2026-07-12
+- Weight: 87.5kg
+- Meals:
+- Workout:
+- Sleep:
+- Body signals:
+- Notes: Morning weigh-in. Compared with 2026-07-10, weight is +0.4kg.
+- Assistant assessment: 用户要求下周降到86.0kg。基于TDEE~2350kcal，制定1550kcal/天方案（蛋白质148g/碳水136g/脂肪52g），配合3次健身房+日均8000步。目标激进但可执行，需零偏差。
+
 ## 2026-07-10
 - Weight: 87.1kg
 - Meals:

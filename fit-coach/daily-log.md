@@ -1,5 +1,18 @@
 # Personal Fit Daily Log
 
+## 2026-07-15
+- Weight: 87.1kg
+- Meals:
+  - 早餐：瑞幸美式×1，鸡蛋×2
+  - 午餐：波奇饭+罗非鱼
+  - 晚餐：卤牛肉50g + 素菜60g + 卤鸡腿
+  - 晚上加餐：粉蒸排骨红薯共150g，巴士鲜奶250ml
+- Workout: 运动30min，消耗150大卡
+- Sleep:
+- Body signals:
+- Notes: 晨起空腹称重。相比07-14的87.5kg下降0.4kg。
+- Assistant assessment: 
+
 ## 2026-07-14
 - Weight: 87.5kg
 - Meals:

@@ -4,9 +4,8 @@ AI Builders 每日简报 — Python 编排脚本
 
 流程：
 1. 运行 prepare-digest.js 拿原始数据
-2. 调 GLM API（OpenAI兼容）让AI筛选+格式化
-3. 轮询等待AI返回
-4. 通过 openclaw message send 发到微信
+2. 调 openclaw agent（自身AI对话能力）筛选+格式化
+3. 输出结果到 stdout，cron announce 自动投递
 
 确定性编排，不依赖AI是否"乖乖执行prompt里的message调用"。
 """
@@ -16,22 +15,15 @@ import subprocess
 import sys
 import os
 import time
-import urllib.request
-import urllib.error
 from datetime import datetime, timezone
 
 # ========== 配置 ==========
 
 DIGEST_SCRIPT = "/root/.openclaw/workspace/skills/follow-builders/scripts/prepare-digest.js"
 
-# GLM API (glmcode, Anthropic兼容接口)
-GLM_API_URL = "https://open.bigmodel.cn/api/anthropic/v1/messages"
-GLM_API_KEY = "9751f1cd23ea43f1a913b1dd5d97623e.HvJnizl2km8er4rw"
-GLM_MODEL = "glm-5.2"
-
 # 超时
-AI_TIMEOUT = 120  # 秒
-NODE_TIMEOUT = 30  # 秒
+AGENT_TIMEOUT = 90   # 秒，openclaw agent 超时
+NODE_TIMEOUT = 30    # 秒，prepare-digest.js 超时
 
 # ========== 工具函数 ==========
 
@@ -121,49 +113,65 @@ English: > 最关键1句，最长110字符
     return prompt
 
 
-def call_glm_api(prompt):
-    """调用 GLM API (Anthropic兼容)，返回AI生成的文本"""
-    log(f"Calling GLM API (model={GLM_MODEL}, Anthropic compat) ...")
+def call_claude_agent(prompt):
+    """调用 openclaw agent（自身AI对话能力），返回生成的文本"""
+    log("Calling openclaw agent ...")
 
-    payload = {
-        "model": GLM_MODEL,
-        "max_tokens": 2000,
-        "messages": [
-            {"role": "user", "content": prompt}
-        ],
-    }
-
-    headers = {
-        "Content-Type": "application/json",
-        "x-api-key": GLM_API_KEY,
-    }
-
-    data = json.dumps(payload).encode("utf-8")
-    req = urllib.request.Request(GLM_API_URL, data=data, headers=headers, method="POST")
+    cmd = [
+        "openclaw", "agent",
+        "--agent", "main",
+        "--message", prompt,
+        "--json",
+        "--timeout", str(AGENT_TIMEOUT),
+    ]
 
     try:
         start = time.time()
-        with urllib.request.urlopen(req, timeout=AI_TIMEOUT) as resp:
-            result = json.loads(resp.read().decode("utf-8"))
-        elapsed = time.time() - start
-        # Anthropic 格式: content[0].text
-        content_blocks = result.get("content", [])
-        content = "\n".join(
-            b.get("text", "") for b in content_blocks if b.get("type") == "text"
+        result = subprocess.run(
+            cmd,
+            capture_output=True, text=True,
+            timeout=AGENT_TIMEOUT + 30,  # 额外30s缓冲
         )
-        usage = result.get("usage", {})
-        log(f"GLM API done in {elapsed:.1f}s, tokens={usage}")
-        return content
-    except urllib.error.HTTPError as e:
-        body = ""
-        try:
-            body = e.read().decode("utf-8")[:500]
-        except:
-            pass
-        log(f"ERROR: GLM API HTTP {e.code}: {body}")
+        elapsed = time.time() - start
+
+        if result.returncode != 0:
+            # 提取有用错误信息
+            stderr_tail = result.stderr[-500:] if result.stderr else ""
+            stdout_tail = result.stdout[-500:] if result.stdout else ""
+            log(f"ERROR: openclaw agent exited {result.returncode}")
+            log(f"  stderr: {stderr_tail}")
+            log(f"  stdout: {stdout_tail}")
+            return None
+
+        data = json.loads(result.stdout)
+        result_meta = data.get("result", {})
+        payloads = result_meta.get("payloads", [])
+        if not payloads:
+            log("ERROR: no payloads in agent response")
+            return None
+
+        text = payloads[0].get("text", "")
+        meta = result_meta.get("meta", {})
+        agent_meta = meta.get("agentMeta", {})
+        model = agent_meta.get("model", "?")
+        usage = agent_meta.get("usage", {})
+        log(f"Agent done in {elapsed:.1f}s, model={model}, tokens={usage}")
+
+        if not text.strip():
+            log("ERROR: agent returned empty text")
+            return None
+
+        return text.strip()
+
+    except subprocess.TimeoutExpired:
+        log(f"ERROR: openclaw agent timed out after {AGENT_TIMEOUT+30}s")
+        return None
+    except json.JSONDecodeError as e:
+        log(f"ERROR: agent JSON parse failed: {e}")
+        log(f"  stdout tail: {result.stdout[-300:]}")
         return None
     except Exception as e:
-        log(f"ERROR: GLM API exception: {e}")
+        log(f"ERROR: openclaw agent exception: {e}")
         return None
 
 
@@ -188,8 +196,8 @@ def main():
     # 2. 构建prompt
     prompt = build_ai_prompt(digest_data)
 
-    # 3. 调AI生成简报
-    digest_text = call_glm_api(prompt)
+    # 3. 调 openclaw agent 生成简报（借用自身AI对话能力）
+    digest_text = call_claude_agent(prompt)
     if not digest_text:
         print("⚠️ AI Builders 简报失败：AI生成异常", file=sys.stderr)
         print("⚠️ AI Builders 简报失败：AI生成异常")

@@ -202,7 +202,7 @@ _上次更新: 2026-07-21_
 
 ## 教训与经验
 
-1. **cron投递终极方案（07-21定案）** — `delivery.mode=announce` + `bestEffort=false` + `failureAlert.after=1` + prompt中禁止AI调message工具。系统层投递是唯一可靠路径。从04-11到07-21踩了10+次，最终确认
+1. **cron投递方案（07-28最终定论）** — `delivery.mode=announce`（系统层投递）是唯一可靠路径。07-27尝试的`delivery.mode=none`+AI手动调message工具方案再次失败（lastDeliveryStatus=not-delivered）。04月到07月反复验证：隔离会话里AI调message工具不可靠，prompt里写了AI也不一定执行。**最终方案：所有cron任务用announce投递 + prompt中清除手动message指令 + bestEffort=false + failureAlert.after=1。AI只生成内容，投递交给系统。**
 2. **cron任务创建后必须验证投递** — 不加accountId的微信任务会静默失败
 3. **修复问题以不重启为第一目标** — 配置文件修改后cron下次执行会重新读取，不需要重启网关
 4. **第一性原理思考** — 不要头痛医头，先拆解到根本原因再行动
@@ -230,4 +230,4 @@ _上次更新: 2026-07-21_
 - [ ] WAF绕过技能法律使用边界待明确
 - [ ] ljg-skills改造可行性待用户确认优先级（高：rank/paper/think/card）
 - [x] 新闻聚合技能需要更多数据源验证（04-17：9个源已验证，日常推送稳定运行）
-- [x] AI Builders 简报微信投递问题解决（06-30：分段推送改造成功，用户确认收到）
+- [x] cron推送投递问题彻底解决（07-28：delivery.mode=announce是唯一可靠方案，AI手动调message工具在隔离会话不可靠）

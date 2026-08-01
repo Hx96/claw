@@ -217,6 +217,7 @@ _上次更新: 2026-07-21_
 13. **AI 热点推送别机械汇总** — opencli 多源里噪音很大，尤其 Product Hunt/V2EX/Dev.to。应该先判信号质量，再按“热度 + 业务相关性”混排，否则推送会被水货污染
 14. **微信的 delivered 不是收据** — 对 `AI Builders 每日简报` 这类长文本，cron 记录 `delivered=true` 仍可能用户侧不可见。用户反馈没收到时，优先压短内容并做手动补发验证，不要只盯状态字段
 15. **outbound 日志不可靠** — grep outbound 日志验证投递方案失败，文件日志是异步/缓冲写入，不能作为投递凭证。改用 message 工具返回值的 messageId 验证
+17. **context_token 24h过期 + tokenless降级（07-31最终方案）** — 微信 iLink context_token 有效期24小时（官方确认），过期后 ret=-2 "prepare failed"。实测 tokenless 发送（不带context_token）可以成功投递。插件代码已改：api.ts 加 ret 检查 + send.ts sendWithFallback 先带token发送→失败降级tokenless重试。之前的cron投递问题从04月到07月反复踩了10+次，根因就是这个。
 16. **cron 任务时间必须分散** — 7条消息在80分钟内集中投递必触发微信限流。改进：拉开间隔，部分任务挪到不同时段
 
 ## 待办/长期项目

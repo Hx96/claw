@@ -175,11 +175,6 @@ def call_claude_agent(prompt):
         return None
 
 
-# 注意：不通过 Python 发微信消息。
-# cron 任务的 delivery.mode=announce 会自动投递 stdout 最后一行之后的纯文本内容。
-# Python 脚本只需把最终简报打印到 stdout，投递交给系统。
-
-
 # ========== 主流程 ==========
 
 def main():
@@ -203,12 +198,16 @@ def main():
         print("⚠️ AI Builders 简报失败：AI生成异常")
         sys.exit(1)
 
-    # 4. 输出简报到 stdout
-    # cron 的 agentTurn prompt 会让AI执行本脚本，然后读取 stdout 投递
-    # 这里直接输出纯简报文本
-    print(digest_text)
-    log("=== Done ===")
-    sys.exit(0)
+    # 4. Python tokenless 投递（不依赖 JS announce 层）
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from deliver import deliver_text
+    ok = deliver_text(digest_text)
+    if ok:
+        log("=== Done (delivered via tokenless) ===")
+        sys.exit(0)
+    else:
+        log("=== FAILED (tokenless delivery failed) ===")
+        sys.exit(1)
 
 
 if __name__ == "__main__":

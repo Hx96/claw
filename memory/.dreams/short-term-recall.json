@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-03T05:22:46.319Z",
+  "updatedAt": "2026-08-04T00:35:39.157Z",
   "entries": {
     "memory:memory/2026-03-25.md:45:109": {
       "key": "memory:memory/2026-03-25.md:45:109",
@@ -1004,6 +1004,99 @@
         "1700-1900kcal",
         "130-150g",
         "fit-coach/daily-log.md"
+      ]
+    },
+    "memory:memory/2026-07-19.md:1:7": {
+      "key": "memory:memory/2026-07-19.md:1:7",
+      "path": "memory/2026-07-19.md",
+      "startLine": 1,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "# 2026-07-19 周日 ## 活动 - 多个 cron 定时任务正常执行（约08:30 CST）：新闻采集、git-sync 等 - 无用户主动会话 - heartbeat 正常运行",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-08-04T00:35:39.157Z",
+      "lastRecalledAt": "2026-08-04T00:35:39.157Z",
+      "queryHashes": [
+        "b16f2761d6fd"
+      ],
+      "recallDays": [
+        "2026-08-04"
+      ],
+      "conceptTags": [
+        "git-sync",
+        "周日",
+        "活动",
+        "多个",
+        "cron",
+        "任务",
+        "正常",
+        "执行"
+      ]
+    },
+    "memory:memory/2026-07-30.md:1:16": {
+      "key": "memory:memory/2026-07-30.md:1:16",
+      "path": "memory/2026-07-30.md",
+      "startLine": 1,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "# 2026-07-30 ## Cron 活动 (06:50 - 08:40 CST) - 06:50 — cron session (f676af76) - 07:00 — cron session (51205edd) - 07:30 — cron session (c8e77053) - 08:00 — main session 活动 (121k input tokens, 549 output) - 08:00 — cron session (3bd2376b) - 08:30 — cron session (1e5efc7a, 47k input, 279 output) - 08:35 — standup-git-sync cron (28k input, 52 output) - 08:40 — cron session (9fe7e21e, 26k input, 148 output) ## 备注 - 今日无用户主动对话，均为定时任务触发 - MEMORY.md 上次更新 2026-07-28，距今2天，暂不需周更新（< 7天）",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-08-04T00:35:39.157Z",
+      "lastRecalledAt": "2026-08-04T00:35:39.157Z",
+      "queryHashes": [
+        "b16f2761d6fd"
+      ],
+      "recallDays": [
+        "2026-08-04"
+      ],
+      "conceptTags": [
+        "standup-git-sync",
+        "memory.md",
+        "cron",
+        "活动",
+        "cst",
+        "f676af76",
+        "51205edd",
+        "c8e77053"
+      ]
+    },
+    "memory:memory/2026-08-02.md:1:12": {
+      "key": "memory:memory/2026-08-02.md:1:12",
+      "path": "memory/2026-08-02.md",
+      "startLine": 1,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "## Cron 活动（~08:35-08:40 CST） - standup-git-sync cron 任务执行（08:35） - 另一个 cron 任务执行（08:40） - git 有一次提交：`c7a8d47 daily: 2026-08-02 站会数据同步` ## Heartbeat 检查（20:33 CST） - 今天的 memory 日志此前不存在，由 heartbeat 补建 - MEMORY.md 上次修改时间戳距今约 2 天（< 7天），无需周更新 - 无用户交互会话记录",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-08-04T00:35:39.157Z",
+      "lastRecalledAt": "2026-08-04T00:35:39.157Z",
+      "queryHashes": [
+        "b16f2761d6fd"
+      ],
+      "recallDays": [
+        "2026-08-04"
+      ],
+      "conceptTags": [
+        "35-08",
+        "standup-git-sync",
+        "memory.md",
+        "cron",
+        "活动",
+        "cst",
+        "standup",
+        "git"
       ]
     }
   }

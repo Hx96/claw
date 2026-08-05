@@ -358,16 +358,10 @@ def main():
         print(cn_text)
         sys.exit(1)
 
-    # 5. Python tokenless 投递（不依赖 JS announce 层）
-    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-    from deliver import deliver_text
-    ok = deliver_text(report)
-    if ok:
-        log("=== Done (delivered via tokenless) ===")
-        sys.exit(0)
-    else:
-        log("=== FAILED (tokenless delivery failed) ===")
-        sys.exit(1)
+    # 5. 输出到 stdout，cron announce 自动投递
+    print(report)
+    log("=== Done (report printed to stdout for announce delivery) ===")
+    sys.exit(0)
 
 
 if __name__ == "__main__":

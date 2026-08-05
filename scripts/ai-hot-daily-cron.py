@@ -207,16 +207,10 @@ def main():
         print("⚠️ AI HOT 日报失败：AI生成异常")
         sys.exit(1)
 
-    # 4. Python tokenless 投递（不依赖 JS announce 层）
-    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-    from deliver import deliver_text
-    ok = deliver_text(report)
-    if ok:
-        log("=== Done (delivered via tokenless) ===")
-        sys.exit(0)
-    else:
-        log("=== FAILED (tokenless delivery failed) ===")
-        sys.exit(1)
+    # 4. 输出到 stdout → cron announce 自动投递
+    print(report)
+    log("=== Done (stdout → announce) ===")
+    sys.exit(0)
 
 
 if __name__ == "__main__":

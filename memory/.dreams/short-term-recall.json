@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-04T00:35:39.157Z",
+  "updatedAt": "2026-08-07T06:22:32.063Z",
   "entries": {
     "memory:memory/2026-03-25.md:45:109": {
       "key": "memory:memory/2026-03-25.md:45:109",
@@ -314,24 +314,26 @@
       "endLine": 52,
       "source": "memory",
       "snippet": "# 2026-03-26 Memory ## OpenClaw Security Check Cron Job Created daily security check job for OpenClaw: **Job Details:** - Name: openclaw-daily-security-check - Schedule: Every day at 8:00 AM (Cron: 0 8 * * *) - Session: Isolated - Channel: openclaw-weixin - Status: Enabled - Next Run: 2026-03-27 08:00:00 **Check Script Location:** `/root/.openclaw/workspace/scripts/openclaw-security-check.sh` **What it does:** 1. Checks OpenClaw version 2. Scans for package vulnerabilities (npm audit) 3. Checks system security updates 4. Attempts auto-fix for vulnerabilities 5. Updates OpenClaw to latest version 6. Checks configuration file security 7. Generates report with logs **Log Files:** - Main l",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-16T23:35:39.758Z",
-      "lastRecalledAt": "2026-06-23T23:42:37.593Z",
+      "lastRecalledAt": "2026-08-07T06:22:32.063Z",
       "queryHashes": [
         "7c6ab4d72b68",
         "26f64e1d3b37",
         "079051661cab",
-        "57501403ad71"
+        "57501403ad71",
+        "c5d2460b4dbb"
       ],
       "recallDays": [
         "2026-04-17",
         "2026-04-27",
         "2026-06-08",
-        "2026-06-24"
+        "2026-06-24",
+        "2026-08-07"
       ],
       "conceptTags": [
         "openclaw-daily-security-check",
@@ -1097,6 +1099,37 @@
         "cst",
         "standup",
         "git"
+      ]
+    },
+    "memory:memory/2026-03-25.md:461:509": {
+      "key": "memory:memory/2026-03-25.md:461:509",
+      "path": "memory/2026-03-25.md",
+      "startLine": 461,
+      "endLine": 509,
+      "source": "memory",
+      "snippet": "7. OpenClaw 最有用技能网上搜索 8. 技术社区养虾调研报告 9. 数据开发 DAG 生成调研报告 10. AI Agent 开发调研报告 11. Agent 开发参考资料 12. ClawHub 技能排行榜 13. OpenClaw 初始化指南 14. 天气查询结果验证 15. 总结与建议（16:07） 16. OpenClaw 最有用技能调研 17. AI 热点推送（07:20） --- ### 💡 今日最终感悟 ### 工作模式完全优化 从\"快速响应\"转向\"深度输出\"： **第一轮**（07:00 - 16:13）： - 快速响应 16 个任务 - 生成报告和案例 - 上传分享 **第二轮**（16:13 - 16:22）： - 深度扩展内容 - 从大纲 → 详细内容 - 从 5,000 字 → 15,000 字 ### 用户需求完全理解 - ✅ 调研类：5+ 信息源 - ✅ 内容类：详细扩展 - ✅ 结构类：清晰分页 - ✅ 设计类：完整规范 ### 技能应用完全熟练 - ✅ agent-browser：搜索能力 - ✅ multi-search-engine：17 个引擎 - ✅ lightclaw_upload_file：分享工作流 - ✅ 内容扩展：从大纲到详细 --- **更新时间**：2026-03-25 16:22 **更新人**：OpenClaw AI Assistant **文件路径**：/root/.openclaw/workspace/memory/2026-03-25.md **状态**：✅ 已更新 **版本**：v2",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-08-07T06:22:32.063Z",
+      "lastRecalledAt": "2026-08-07T06:22:32.063Z",
+      "queryHashes": [
+        "c5d2460b4dbb"
+      ],
+      "recallDays": [
+        "2026-08-07"
+      ],
+      "conceptTags": [
+        "agent-browser",
+        "multi-search-engine",
+        "lightclaw-upload-file",
+        "openclaw",
+        "最有",
+        "技能",
+        "网上",
+        "搜索"
       ]
     }
   }
